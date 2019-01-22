@@ -1,0 +1,5 @@
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\IDataAccess\bin\Debug\IDataAccess.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\IDataAccess\bin\Debug\IDataAccess.pdb
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\IDataAccess\obj\Debug\IDataAccess.csproj.CoreCompileInputs.cache
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\IDataAccess\obj\Debug\IDataAccess.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\IDataAccess\obj\Debug\IDataAccess.pdb
