@@ -209,9 +209,17 @@
       <Project>{2A691997-0EA6-444C-B1B6-6395580B0415}</Project>
       <Name>Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{1ec3d238-0f5e-4906-a9d1-386cfe8a2f73}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IBusiness\IBusiness.csproj">
       <Project>{C6AD3441-2AB2-4CC5-A41E-5EB9BB545A54}</Project>
       <Name>IBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDataAccess\IDataAccess.csproj">
+      <Project>{16C95DEA-2B15-46C6-8708-4832582C7EE2}</Project>
+      <Name>IDataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\Logger\Logger.csproj">
       <Project>{3236308D-BC36-4EF0-A80E-5904CC741BEF}</Project>

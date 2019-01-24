@@ -5,8 +5,8 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="FileRemotePath" Type="nvarchar" MaxLength="50" />
-    <Property Name="LocalPath" Type="nvarchar" MaxLength="50" />
+    <Property Name="FileRemotePath" Type="varchar(max)" />
+    <Property Name="LocalPath" Type="varchar(max)" />
     <Property Name="ProcessingStatus" Type="int" />
   </EntityType>
   <EntityContainer Name="DownloadUtilityModelStoreContainer">

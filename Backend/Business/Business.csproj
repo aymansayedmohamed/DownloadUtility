@@ -53,9 +53,17 @@
     <Compile Include="SourcesParser.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{1EC3D238-0F5E-4906-A9D1-386CFE8A2F73}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IBusiness\IBusiness.csproj">
       <Project>{C6AD3441-2AB2-4CC5-A41E-5EB9BB545A54}</Project>
       <Name>IBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDataAccess\IDataAccess.csproj">
+      <Project>{16C95DEA-2B15-46C6-8708-4832582C7EE2}</Project>
+      <Name>IDataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\Logger\Logger.csproj">
       <Project>{3236308D-BC36-4EF0-A80E-5904CC741BEF}</Project>

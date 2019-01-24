@@ -4,8 +4,10 @@
 namespace Services
 {
     using Business;
+    using DataAccess;
     using DownloadUtilityLogger;
     using IBusiness;
+    using IDataAccess;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
     using Ninject;
     using Ninject.Web.Common;
@@ -66,6 +68,10 @@ namespace Services
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InSingletonScope();
+
+            kernel.Bind(typeof(IRepository<>)).To(typeof(Repository<>)).InRequestScope();
+
             kernel.Bind<ILogger>().To<Logger>().InSingletonScope();
 
             kernel.Bind<IParser>().To<SourcesParser>().InRequestScope();

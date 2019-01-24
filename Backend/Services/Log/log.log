@@ -1,8 +1,10 @@
-2019/36/24 17:36:00,479 INFO  DownloadUtilityLogger.Logger [14] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Services\Temp 
-2019/36/24 17:36:00,492 INFO  DownloadUtilityLogger.Logger [14] tempFileDir object is created. 
-2019/36/24 17:36:00,492 INFO  DownloadUtilityLogger.Logger [14] tempFileDir not exists. 
-2019/36/24 17:36:00,495 INFO  DownloadUtilityLogger.Logger [14] tempFileDir created. 
-2019/41/24 17:41:03,354 INFO  DownloadUtilityLogger.Logger [12] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Services\Temp 
-2019/41/24 17:41:03,381 INFO  DownloadUtilityLogger.Logger [12] tempFileDir object is created. 
-2019/45/24 17:45:19,403 INFO  DownloadUtilityLogger.Logger [11] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Services\Temp 
-2019/45/24 17:45:19,412 INFO  DownloadUtilityLogger.Logger [11] tempFileDir object is created. 
+2019/27/25 01:27:27,731 INFO  DownloadUtilityLogger.Logger [8] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp 
+2019/27/25 01:27:27,740 INFO  DownloadUtilityLogger.Logger [8] tempFileDir object is created. 
+2019/33/25 01:33:52,731 INFO  DownloadUtilityLogger.Logger [8] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp 
+2019/33/25 01:33:52,746 INFO  DownloadUtilityLogger.Logger [8] tempFileDir object is created. 
+2019/40/25 01:40:45,129 INFO  DownloadUtilityLogger.Logger [14] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp 
+2019/40/25 01:40:45,155 INFO  DownloadUtilityLogger.Logger [14] tempFileDir object is created. 
+2019/45/25 01:45:35,861 INFO  DownloadUtilityLogger.Logger [13] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp 
+2019/45/25 01:45:35,871 INFO  DownloadUtilityLogger.Logger [13] tempFileDir object is created. 
+2019/50/25 01:50:53,236 INFO  DownloadUtilityLogger.Logger [9] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp 
+2019/50/25 01:50:53,245 INFO  DownloadUtilityLogger.Logger [9] tempFileDir object is created. 

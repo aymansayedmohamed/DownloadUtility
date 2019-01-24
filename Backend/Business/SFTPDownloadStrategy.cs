@@ -26,7 +26,7 @@ namespace Business
             return protocol == this.protocol; 
         }
 
-        public void Download(string source)
+        public string Download(string source)
         {
             //Implement ftp download startgy    
 
@@ -37,7 +37,7 @@ namespace Business
             string sftpInboundPath = "";
             string filename = "";
 
-            DownloadSFTPFile(host, port, username, password, sftpInboundPath, filename);
+           return DownloadSFTPFile(host, port, username, password, sftpInboundPath, filename);
         }
 
         private string DownloadSFTPFile(string host, int port, string username, string password, string sftpInboundPath, string filename)

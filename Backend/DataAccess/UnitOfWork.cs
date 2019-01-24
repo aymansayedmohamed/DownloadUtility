@@ -3,7 +3,7 @@ using System.Data.Entity;
 
 namespace DataAccess
 {
-    internal class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private DbContextTransaction _transaction;
 

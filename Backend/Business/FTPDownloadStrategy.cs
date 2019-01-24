@@ -23,7 +23,7 @@ namespace Business
             return protocol == this.protocol;
         }
 
-        public void Download(string source)
+        public string Download(string source)
         {
             //Implement ftp download startgy
 
@@ -31,7 +31,7 @@ namespace Business
             String Username = ""; 
             String Password = ""; 
 
-            var localDestinationPath = DownloadFTPFile(source, Username, Password);
+            return DownloadFTPFile(source, Username, Password);
 
         }
 

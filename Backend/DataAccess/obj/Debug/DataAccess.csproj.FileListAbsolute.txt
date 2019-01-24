@@ -12,3 +12,17 @@ D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\DataAccess\bin
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\DataAccess\bin\Debug\EntityFramework.xml
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataAccess\bin\Debug\DataAccess.dll.config
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataAccess\bin\Debug\DataAccess.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataAccess\bin\Debug\DataAccess.pdb
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataAccess\bin\Debug\EntityFramework.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataAccess\bin\Debug\IDataAccess.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataAccess\bin\Debug\IDataAccess.pdb
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataAccess\bin\Debug\EntityFramework.xml
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataAccess\obj\Debug\DataAccess.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataAccess\obj\Debug\DataAccess.pdb

@@ -5,8 +5,8 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="FileRemotePath" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="LocalPath" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FileRemotePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LocalPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="ProcessingStatus" Type="Int32" />
   </EntityType>
   <EntityContainer Name="DownloadUtilityEntities" annotation:LazyLoadingEnabled="true">

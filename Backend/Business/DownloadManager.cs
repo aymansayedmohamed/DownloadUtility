@@ -1,4 +1,6 @@
-﻿using IBusiness;
+﻿using DataAccess;
+using IBusiness;
+using IDataAccess;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -11,11 +13,13 @@ namespace Business
     {
         private readonly IParser parser;
         private readonly IDownloadStrategyFactory downloadStrategyFactory;
+        IRepository<DownloadedFile> repoDownloadedFile;
 
-        public DownloadManager(IParser parser, IDownloadStrategyFactory downloadStrategyFactory)
+        public DownloadManager(IParser parser, IDownloadStrategyFactory downloadStrategyFactory, IRepository<DownloadedFile> repoDownloadedFile)
         {
             this.parser = parser;
             this.downloadStrategyFactory = downloadStrategyFactory;
+            this.repoDownloadedFile = repoDownloadedFile;
         }
 
         public void Process(string sources)
@@ -31,8 +35,16 @@ namespace Business
 
                 IDownloadStrategy downloadStrategy = downloadStrategyFactory.Build(url);
 
-                downloadStrategy.Download(url);
+                var localDestinationPath = downloadStrategy.Download(url);
 
+                repoDownloadedFile.Add(new DownloadedFile()
+                {
+                    FileRemotePath = url,
+                    LocalPath = localDestinationPath,
+                    ProcessingStatus = 1,
+                });
+
+                repoDownloadedFile.SaveChanges();
             });
 
         }
