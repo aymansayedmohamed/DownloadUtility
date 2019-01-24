@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DownloadUtilityModelStoreContainer" CdmEntityContainer="DownloadUtilityEntities">
+    <EntitySetMapping Name="DownloadedFiles">
+      <EntityTypeMapping TypeName="DownloadUtilityModel.DownloadedFile">
+        <MappingFragment StoreEntitySet="DownloadedFiles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FileRemotePath" ColumnName="FileRemotePath" />
+          <ScalarProperty Name="LocalPath" ColumnName="LocalPath" />
+          <ScalarProperty Name="ProcessingStatus" ColumnName="ProcessingStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
