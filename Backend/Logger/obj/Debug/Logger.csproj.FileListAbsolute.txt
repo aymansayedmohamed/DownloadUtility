@@ -11,8 +11,8 @@ D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Logger
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Logger\bin\Debug\Logger.pdb
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Logger\bin\Debug\log4net.dll
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Logger\bin\Debug\log4net.xml
-D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Logger\obj\Debug\Logger.csprojAssemblyReference.cache
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Logger\obj\Debug\Logger.csproj.CoreCompileInputs.cache
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Logger\obj\Debug\Logger.csproj.CopyComplete
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Logger\obj\Debug\Logger.dll
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Logger\obj\Debug\Logger.pdb
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Logger\obj\Debug\Logger.csprojAssemblyReference.cache

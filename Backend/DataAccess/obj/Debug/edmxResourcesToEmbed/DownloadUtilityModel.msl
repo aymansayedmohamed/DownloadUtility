@@ -4,10 +4,18 @@
     <EntitySetMapping Name="DownloadedFiles">
       <EntityTypeMapping TypeName="DownloadUtilityModel.DownloadedFile">
         <MappingFragment StoreEntitySet="DownloadedFiles">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="FileRemotePath" ColumnName="FileRemotePath" />
-          <ScalarProperty Name="LocalPath" ColumnName="LocalPath" />
           <ScalarProperty Name="ProcessingStatus" ColumnName="ProcessingStatus" />
+          <ScalarProperty Name="LocalPath" ColumnName="LocalPath" />
+          <ScalarProperty Name="FileRemotePath" ColumnName="FileRemotePath" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProcessingStatus">
+      <EntityTypeMapping TypeName="DownloadUtilityModel.ProcessingStatu">
+        <MappingFragment StoreEntitySet="ProcessingStatus">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

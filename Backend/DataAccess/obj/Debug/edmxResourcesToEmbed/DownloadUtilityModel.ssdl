@@ -9,7 +9,33 @@
     <Property Name="LocalPath" Type="varchar(max)" />
     <Property Name="ProcessingStatus" Type="int" />
   </EntityType>
+  <EntityType Name="ProcessingStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK_DownloadedFiles_ProcessingStatus">
+    <End Role="ProcessingStatus" Type="Self.ProcessingStatus" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DownloadedFiles" Type="Self.DownloadedFiles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProcessingStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DownloadedFiles">
+        <PropertyRef Name="ProcessingStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="DownloadUtilityModelStoreContainer">
     <EntitySet Name="DownloadedFiles" EntityType="Self.DownloadedFiles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProcessingStatus" EntityType="Self.ProcessingStatus" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_DownloadedFiles_ProcessingStatus" Association="Self.FK_DownloadedFiles_ProcessingStatus">
+      <End Role="ProcessingStatus" EntitySet="ProcessingStatus" />
+      <End Role="DownloadedFiles" EntitySet="DownloadedFiles" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

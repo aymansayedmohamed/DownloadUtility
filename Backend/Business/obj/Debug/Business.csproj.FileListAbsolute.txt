@@ -35,3 +35,5 @@ D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Busine
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\bin\Debug\DataAccess.dll.config
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\bin\Debug\IDataAccess.pdb
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\bin\Debug\EntityFramework.xml
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\bin\Debug\DataModel.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\bin\Debug\DataModel.pdb

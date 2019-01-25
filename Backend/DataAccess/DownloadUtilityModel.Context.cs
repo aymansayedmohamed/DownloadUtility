@@ -9,6 +9,7 @@
 
 namespace DataAccess
 {
+    using DomainModels;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
@@ -26,5 +27,6 @@ namespace DataAccess
         }
     
         public virtual DbSet<DownloadedFile> DownloadedFiles { get; set; }
+        public virtual DbSet<ProcessingStatu> ProcessingStatus { get; set; }
     }
 }

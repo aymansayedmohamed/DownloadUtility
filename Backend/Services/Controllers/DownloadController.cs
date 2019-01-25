@@ -25,8 +25,9 @@ namespace Services.Controllers
         }
 
 
-        [HttpGet]
-        public HttpResponseMessage Download(string sources)
+        [HttpPost]
+        [ActionName("DownloadSources")]
+        public HttpResponseMessage DownloadSources([FromBody] string sources)
         {
             try
             {

@@ -9,6 +9,6 @@ namespace IBusiness
     public interface IDownloadStrategy
     {
         bool IsMatch(String protocol);
-        string Download(string source);
+        string Download(string source, string localPath);
     }
 }

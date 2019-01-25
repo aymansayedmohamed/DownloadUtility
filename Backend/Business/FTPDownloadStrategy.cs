@@ -23,64 +23,85 @@ namespace Business
             return protocol == this.protocol;
         }
 
-        public string Download(string source)
+        public string Download(string source, string localPath)
         {
-            //Implement ftp download startgy
+            //ftp://speedtest.tele2.net/5MB.zip
+            String username = ""; 
+            String password = ""; 
 
-            //ftp://speedtest.tele2.net/5MB.zip;
-            String Username = ""; 
-            String Password = ""; 
-
-            return DownloadFTPFile(source, Username, Password);
+            return DownloadFTPFile(source, localPath, username, password);
 
         }
 
-        private string DownloadFTPFile(string remoteFtpPath, string username, string password)
+        private string DownloadFTPFile(string remoteFtpPath, string localPath, string username, string password)
         {
-            FtpWebRequest request = (FtpWebRequest)WebRequest.Create(remoteFtpPath);
-
-            request.Method = WebRequestMethods.Ftp.DownloadFile;
-
-            request.Credentials = new NetworkCredential(username, password);
-
-            FtpWebResponse response = (FtpWebResponse)request.GetResponse();
-
-            Stream responseStream = response.GetResponseStream();
-
-            StreamReader reader = new StreamReader(responseStream);
-
-            string localDestinationPath = GetLocalDestinationPath(remoteFtpPath);
-
-            using (FileStream writer = new FileStream(localDestinationPath, FileMode.Create))
+            string localDestinationPath = string.Empty;
+            try
             {
+                localDestinationPath = GetLocalDestinationPath(remoteFtpPath, localPath);
 
-                long length = response.ContentLength;
+                FtpWebRequest request = (FtpWebRequest)WebRequest.Create(remoteFtpPath);
 
-                int bufferSize = 2048;
+                request.Method = WebRequestMethods.Ftp.DownloadFile;
 
-                int readCount;
+                request.Credentials = new NetworkCredential(username, password);
 
-                byte[] buffer = new byte[2048];
+                FtpWebResponse response = (FtpWebResponse)request.GetResponse();
 
-                readCount = responseStream.Read(buffer, 0, bufferSize);
+                Stream responseStream = response.GetResponseStream();
 
-                while (readCount > 0)
+                StreamReader reader = new StreamReader(responseStream);
+
+                var bufferSizeConfigValue = ConfigurationManager.AppSettings["BufferSize"];
+                logger.AddInformationLog($"BufferSize config value: {bufferSizeConfigValue}");
+
+                var bufferSize = !string.IsNullOrWhiteSpace(bufferSizeConfigValue) ? Convert.ToInt32(bufferSizeConfigValue) : 2048;
+
+                using (FileStream writer = new FileStream(localDestinationPath, FileMode.Create))
                 {
-                    writer.Write(buffer, 0, readCount);
-                    readCount = responseStream.Read(buffer, 0, bufferSize);
+                    long length = response.ContentLength;
+
+                    byte[] buffer = new byte[bufferSize];
+
+                    int readCount = responseStream.Read(buffer, 0, bufferSize);
+
+                    while (readCount > 0)
+                    {
+                        writer.Write(buffer, 0, readCount);
+                        readCount = responseStream.Read(buffer, 0, bufferSize);
+                    }
                 }
+
+                logger.AddInformationLog($"Download file {remoteFtpPath} completed");
+
+                reader.Close();
+                response.Close();
+
+                return localDestinationPath;
             }
+            catch(Exception ex)
+            {
+                var fileInfo = new FileInfo(localDestinationPath);
 
-            reader.Close();
-            response.Close();
+                if (fileInfo.Exists)
+                {
+                    File.Delete(fileInfo.FullName);
+                }
 
-            return localDestinationPath;
+                logger.AddInformationLog($"Download file {remoteFtpPath} didn't complete");
+                throw;
+            }
         }
 
-        private string GetLocalDestinationPath(string RemoteFtpPath)
+        private string GetLocalDestinationPath(string remoteFtpPath, string localPath)
         {
-            string tempFileDirPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Temp");
+            string tempFileDirPath = localPath;
 
+            if(string.IsNullOrEmpty(tempFileDirPath))
+            {
+                tempFileDirPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Temp");
+            }
+                
             logger.AddInformationLog(nameof(tempFileDirPath) + ": " + tempFileDirPath);
 
             DirectoryInfo tempFileDir = new DirectoryInfo(tempFileDirPath);
@@ -96,7 +117,7 @@ namespace Business
                 logger.AddInformationLog(nameof(tempFileDir) + " created.");
             }
 
-            string fileName = RemoteFtpPath.Substring(RemoteFtpPath.LastIndexOf(@"/") + 1);
+            string fileName = remoteFtpPath.Substring(remoteFtpPath.LastIndexOf(@"/") + 1);
 
             string localDestinationPath =Path.Combine(tempFileDir.FullName,fileName);
 

@@ -243,3 +243,5 @@ D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Servic
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\obj\Debug\Services.csproj.CopyComplete
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\obj\Debug\Services.dll
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\obj\Debug\Services.pdb
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\bin\DataModel.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\bin\DataModel.pdb

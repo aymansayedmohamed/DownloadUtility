@@ -5,7 +5,9 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="ee32f07f32df4a0898808e35bd92eaa1" Name="Diagram1">
-        <EntityTypeShape EntityType="DownloadUtilityModel.DownloadedFile" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DownloadUtilityModel.DownloadedFile" Width="1.5" PointX="3" PointY="0.875" />
+        <EntityTypeShape EntityType="DownloadUtilityModel.ProcessingStatu" Width="1.5" PointX="0.75" PointY="1.125" />
+        <AssociationConnector Association="DownloadUtilityModel.FK_DownloadedFiles_ProcessingStatus" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="DownloadUtilityModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DownloadUtilityEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DownloadedFiles" EntityType="DownloadUtilityModel.DownloadedFile" />
+    <EntitySet Name="ProcessingStatus" EntityType="DownloadUtilityModel.ProcessingStatu" />
+    <AssociationSet Name="FK_DownloadedFiles_ProcessingStatus" Association="DownloadUtilityModel.FK_DownloadedFiles_ProcessingStatus">
+      <End Role="ProcessingStatu" EntitySet="ProcessingStatus" />
+      <End Role="DownloadedFile" EntitySet="DownloadedFiles" />
+    </AssociationSet>
+  </EntityContainer>
   <EntityType Name="DownloadedFile">
     <Key>
       <PropertyRef Name="Id" />
@@ -8,8 +16,28 @@
     <Property Name="FileRemotePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="LocalPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="ProcessingStatus" Type="Int32" />
+    <NavigationProperty Name="ProcessingStatu" Relationship="DownloadUtilityModel.FK_DownloadedFiles_ProcessingStatus" FromRole="DownloadedFile" ToRole="ProcessingStatu" />
   </EntityType>
-  <EntityContainer Name="DownloadUtilityEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="DownloadedFiles" EntityType="Self.DownloadedFile" />
-  </EntityContainer>
+  <EntityType Name="ProcessingStatu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="DownloadedFiles" Relationship="DownloadUtilityModel.FK_DownloadedFiles_ProcessingStatus" FromRole="ProcessingStatu" ToRole="DownloadedFile" />
+  </EntityType>
+  <Association Name="FK_DownloadedFiles_ProcessingStatus">
+    <End Type="DownloadUtilityModel.ProcessingStatu" Role="ProcessingStatu" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="DownloadUtilityModel.DownloadedFile" Role="DownloadedFile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProcessingStatu">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DownloadedFile">
+        <PropertyRef Name="ProcessingStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

@@ -26,7 +26,7 @@ namespace Business
             return protocol == this.protocol; 
         }
 
-        public string Download(string source)
+        public string Download(string source, string localPath)
         {
             //Implement ftp download startgy    
 
@@ -118,8 +118,6 @@ namespace Business
                 throw;
             }
         }
-
-
 
     }
 }

@@ -50,9 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DownloadedFile.cs">
-      <DependentUpon>DownloadUtilityModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="DownloadUtilityModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -99,6 +96,10 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataModel\DomainModels.csproj">
+      <Project>{e675832e-15bd-48f2-bc58-d93d621aab11}</Project>
+      <Name>DomainModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IDataAccess\IDataAccess.csproj">
       <Project>{16C95DEA-2B15-46C6-8708-4832582C7EE2}</Project>
       <Name>IDataAccess</Name>
