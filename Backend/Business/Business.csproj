@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="DownloadManager.cs" />
     <Compile Include="DownloadStrategyFactory.cs" />
+    <Compile Include="Helpers\IOHelper.cs" />
+    <Compile Include="UriDownloadStrategy.cs" />
     <Compile Include="SFTPDownloadStrategy.cs" />
     <Compile Include="FTPDownloadStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

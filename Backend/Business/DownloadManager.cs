@@ -46,35 +46,38 @@ namespace Business
 
             ConcurrentQueue<Exception> exceptions = new ConcurrentQueue<Exception>();
 
-            Parallel.ForEach(soursesUrls, url =>
+            using (repoDownloadedFile)
             {
-                try
+                Parallel.ForEach(soursesUrls, url =>
                 {
-                    IDownloadStrategy downloadStrategy = downloadStrategyFactory.Build(url);
-
-                    string localDestinationPath = downloadStrategy.Download(url, localPath);
-                    logger.AddInformationLog($"Local path is: {localPath} for URL: {url} ");
-
-                    repoDownloadedFile.Add(new DownloadedFile()
+                    try
                     {
-                        FileRemotePath = url,
-                        LocalPath = localDestinationPath,
-                        ProcessingStatus = (int)DownloadStatutes.ReadyForProcessing,
-                    });
+                        IDownloadStrategy downloadStrategy = downloadStrategyFactory.Build(url);
 
-                    repoDownloadedFile.SaveChanges();
+                        string localDestinationPath = downloadStrategy.Download(url, localPath);
+                        logger.AddInformationLog($"Local path is: {localPath} for URL: {url} ");
 
-                    logger.AddInformationLog($"Source :{url} saved to the database with status ready for processing");
-                }
-                catch (Exception ex)
+                        repoDownloadedFile.Add(new DownloadedFile()
+                        {
+                            FileRemotePath = url,
+                            LocalPath = localDestinationPath,
+                            ProcessingStatus = (int)DownloadStatutes.ReadyForProcessing,
+                        });
+
+                        repoDownloadedFile.SaveChanges();
+
+                        logger.AddInformationLog($"Source :{url} saved to the database with status ready for processing");
+                    }
+                    catch (Exception ex)
+                    {
+                        exceptions.Enqueue(ex);
+                    }
+                });
+
+                if (exceptions.Any())
                 {
-                    exceptions.Enqueue(ex);
+                    throw new AggregateException(exceptions);
                 }
-            });
-
-            if (exceptions.Any())
-            {
-                throw new AggregateException(exceptions);
             }
 
         }

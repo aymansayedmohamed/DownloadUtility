@@ -18,3 +18,361 @@
 2019/03/25 12:03:05,835 INFO  DownloadUtilityLogger.Logger [9] tempFileDir object is created. 
 2019/04/25 12:04:36,873 INFO  DownloadUtilityLogger.Logger [13] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp 
 2019/04/25 12:04:36,881 INFO  DownloadUtilityLogger.Logger [13] tempFileDir object is created. 
+2019/58/25 15:58:25,921 INFO  DownloadUtilityLogger.Logger [9] sources value: ftp://speedtest.tele2.net/5MB.zip 
+2019/58/25 15:58:25,934 INFO  DownloadUtilityLogger.Logger [9] Delimiter config value: , 
+2019/58/25 15:58:25,934 INFO  DownloadUtilityLogger.Logger [9] Sources parsing delimiter: , 
+2019/58/25 15:58:25,934 INFO  DownloadUtilityLogger.Logger [9] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/58/25 15:58:25,935 INFO  DownloadUtilityLogger.Logger [9] sourses Urls counts after parsing: 1 
+2019/58/25 15:58:26,807 INFO  DownloadUtilityLogger.Logger [9] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/58/25 15:58:26,807 INFO  DownloadUtilityLogger.Logger [9] tempFileDir object is created. 
+2019/58/25 15:58:28,461 INFO  DownloadUtilityLogger.Logger [9] BufferSize config value: 2048 
+2019/58/25 15:58:55,397 INFO  DownloadUtilityLogger.Logger [8] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/58/25 15:58:55,398 INFO  DownloadUtilityLogger.Logger [8] Delimiter config value: , 
+2019/58/25 15:58:55,398 INFO  DownloadUtilityLogger.Logger [8] Sources parsing delimiter: , 
+2019/58/25 15:58:55,398 INFO  DownloadUtilityLogger.Logger [8] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/58/25 15:58:55,398 INFO  DownloadUtilityLogger.Logger [8] sourses Urls counts after parsing: 2 
+2019/58/25 15:58:57,203 INFO  DownloadUtilityLogger.Logger [8] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/58/25 15:58:59,806 INFO  DownloadUtilityLogger.Logger [8] tempFileDir object is created. 
+2019/59/25 15:59:00,762 INFO  DownloadUtilityLogger.Logger [10] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/59/25 15:59:00,762 INFO  DownloadUtilityLogger.Logger [10] tempFileDir object is created. 
+2019/59/25 15:59:04,302 INFO  DownloadUtilityLogger.Logger [8] BufferSize config value: 2048 
+2019/59/25 15:59:07,944 INFO  DownloadUtilityLogger.Logger [10] BufferSize config value: 2048 
+2019/59/25 15:59:33,073 INFO  DownloadUtilityLogger.Logger [10] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/59/25 15:59:36,183 INFO  DownloadUtilityLogger.Logger [10] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/59/25 15:59:36,184 INFO  DownloadUtilityLogger.Logger [9] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/59/25 15:59:36,185 INFO  DownloadUtilityLogger.Logger [9] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/04/25 16:04:01,271 INFO  DownloadUtilityLogger.Logger [8] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/04/25 16:04:01,278 INFO  DownloadUtilityLogger.Logger [8] Delimiter config value: , 
+2019/04/25 16:04:01,278 INFO  DownloadUtilityLogger.Logger [8] Sources parsing delimiter: , 
+2019/04/25 16:04:01,278 INFO  DownloadUtilityLogger.Logger [8] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/04/25 16:04:01,279 INFO  DownloadUtilityLogger.Logger [8] sourses Urls counts after parsing: 2 
+2019/04/25 16:04:01,282 INFO  DownloadUtilityLogger.Logger [8] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/04/25 16:04:01,282 INFO  DownloadUtilityLogger.Logger [8] tempFileDir object is created. 
+2019/04/25 16:04:01,283 INFO  DownloadUtilityLogger.Logger [9] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/04/25 16:04:01,283 INFO  DownloadUtilityLogger.Logger [9] tempFileDir object is created. 
+2019/04/25 16:04:01,663 INFO  DownloadUtilityLogger.Logger [9] BufferSize config value: 2048 
+2019/04/25 16:04:01,700 INFO  DownloadUtilityLogger.Logger [9] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/04/25 16:04:01,700 INFO  DownloadUtilityLogger.Logger [9] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/04/25 16:04:02,307 INFO  DownloadUtilityLogger.Logger [9] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/04/25 16:04:02,427 INFO  DownloadUtilityLogger.Logger [8] BufferSize config value: 2048 
+2019/04/25 16:04:36,607 INFO  DownloadUtilityLogger.Logger [8] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/04/25 16:04:36,608 INFO  DownloadUtilityLogger.Logger [8] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/04/25 16:04:36,672 INFO  DownloadUtilityLogger.Logger [8] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/04/25 16:04:44,447 INFO  DownloadUtilityLogger.Logger [8] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/04/25 16:04:44,447 INFO  DownloadUtilityLogger.Logger [8] Delimiter config value: , 
+2019/04/25 16:04:44,447 INFO  DownloadUtilityLogger.Logger [8] Sources parsing delimiter: , 
+2019/04/25 16:04:44,447 INFO  DownloadUtilityLogger.Logger [8] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/04/25 16:04:44,447 INFO  DownloadUtilityLogger.Logger [8] sourses Urls counts after parsing: 2 
+2019/04/25 16:04:44,447 INFO  DownloadUtilityLogger.Logger [8] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/04/25 16:04:44,447 INFO  DownloadUtilityLogger.Logger [9] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/04/25 16:04:44,447 INFO  DownloadUtilityLogger.Logger [8] tempFileDir object is created. 
+2019/04/25 16:04:44,447 INFO  DownloadUtilityLogger.Logger [9] tempFileDir object is created. 
+2019/04/25 16:04:44,534 INFO  DownloadUtilityLogger.Logger [9] BufferSize config value: 2048 
+2019/04/25 16:04:44,537 INFO  DownloadUtilityLogger.Logger [9] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/04/25 16:04:44,537 INFO  DownloadUtilityLogger.Logger [9] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/04/25 16:04:44,747 INFO  DownloadUtilityLogger.Logger [8] BufferSize config value: 2048 
+2019/05/25 16:05:15,086 INFO  DownloadUtilityLogger.Logger [8] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/05/25 16:05:15,086 INFO  DownloadUtilityLogger.Logger [8] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/11/25 16:11:13,985 INFO  DownloadUtilityLogger.Logger [6] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/11/25 16:11:13,992 INFO  DownloadUtilityLogger.Logger [6] Delimiter config value: , 
+2019/11/25 16:11:13,992 INFO  DownloadUtilityLogger.Logger [6] Sources parsing delimiter: , 
+2019/11/25 16:11:13,992 INFO  DownloadUtilityLogger.Logger [6] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/11/25 16:11:13,993 INFO  DownloadUtilityLogger.Logger [6] sourses Urls counts after parsing: 2 
+2019/11/25 16:11:13,995 INFO  DownloadUtilityLogger.Logger [6] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/11/25 16:11:13,995 INFO  DownloadUtilityLogger.Logger [6] tempFileDir object is created. 
+2019/11/25 16:11:13,995 INFO  DownloadUtilityLogger.Logger [5] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/11/25 16:11:13,996 INFO  DownloadUtilityLogger.Logger [5] tempFileDir object is created. 
+2019/11/25 16:11:14,434 INFO  DownloadUtilityLogger.Logger [5] BufferSize config value: 2048 
+2019/11/25 16:11:14,468 INFO  DownloadUtilityLogger.Logger [5] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/11/25 16:11:14,469 INFO  DownloadUtilityLogger.Logger [5] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/11/25 16:11:14,669 INFO  DownloadUtilityLogger.Logger [5] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/11/25 16:11:15,271 INFO  DownloadUtilityLogger.Logger [6] BufferSize config value: 2048 
+2019/11/25 16:11:45,070 INFO  DownloadUtilityLogger.Logger [6] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/11/25 16:11:45,070 INFO  DownloadUtilityLogger.Logger [6] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/11/25 16:11:45,153 INFO  DownloadUtilityLogger.Logger [6] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/11/25 16:11:57,022 INFO  DownloadUtilityLogger.Logger [5] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/11/25 16:11:57,022 INFO  DownloadUtilityLogger.Logger [5] Delimiter config value: , 
+2019/11/25 16:11:57,022 INFO  DownloadUtilityLogger.Logger [5] Sources parsing delimiter: , 
+2019/11/25 16:11:57,022 INFO  DownloadUtilityLogger.Logger [5] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/11/25 16:11:57,022 INFO  DownloadUtilityLogger.Logger [5] sourses Urls counts after parsing: 2 
+2019/11/25 16:11:57,022 INFO  DownloadUtilityLogger.Logger [6] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/11/25 16:11:57,022 INFO  DownloadUtilityLogger.Logger [6] tempFileDir object is created. 
+2019/11/25 16:11:57,022 INFO  DownloadUtilityLogger.Logger [5] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/11/25 16:11:57,022 INFO  DownloadUtilityLogger.Logger [5] tempFileDir object is created. 
+2019/11/25 16:11:57,128 INFO  DownloadUtilityLogger.Logger [5] BufferSize config value: 2048 
+2019/11/25 16:11:57,131 INFO  DownloadUtilityLogger.Logger [5] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/11/25 16:11:57,131 INFO  DownloadUtilityLogger.Logger [5] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/11/25 16:11:57,153 INFO  DownloadUtilityLogger.Logger [5] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/11/25 16:11:57,370 INFO  DownloadUtilityLogger.Logger [6] BufferSize config value: 2048 
+2019/12/25 16:12:32,697 INFO  DownloadUtilityLogger.Logger [6] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/12/25 16:12:32,697 INFO  DownloadUtilityLogger.Logger [6] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/12/25 16:12:32,743 INFO  DownloadUtilityLogger.Logger [6] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/14/25 16:14:35,519 INFO  DownloadUtilityLogger.Logger [5] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/14/25 16:14:35,519 INFO  DownloadUtilityLogger.Logger [5] Delimiter config value: , 
+2019/14/25 16:14:35,519 INFO  DownloadUtilityLogger.Logger [5] Sources parsing delimiter: , 
+2019/14/25 16:14:35,519 INFO  DownloadUtilityLogger.Logger [5] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/14/25 16:14:35,519 INFO  DownloadUtilityLogger.Logger [5] sourses Urls counts after parsing: 2 
+2019/14/25 16:14:35,519 INFO  DownloadUtilityLogger.Logger [5] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/14/25 16:14:35,519 INFO  DownloadUtilityLogger.Logger [5] tempFileDir object is created. 
+2019/14/25 16:14:35,519 INFO  DownloadUtilityLogger.Logger [6] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/14/25 16:14:35,519 INFO  DownloadUtilityLogger.Logger [6] tempFileDir object is created. 
+2019/14/25 16:14:35,837 INFO  DownloadUtilityLogger.Logger [6] BufferSize config value: 2048 
+2019/14/25 16:14:35,843 INFO  DownloadUtilityLogger.Logger [6] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/14/25 16:14:35,843 INFO  DownloadUtilityLogger.Logger [6] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/14/25 16:14:35,872 INFO  DownloadUtilityLogger.Logger [6] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/14/25 16:14:36,906 INFO  DownloadUtilityLogger.Logger [5] BufferSize config value: 2048 
+2019/15/25 16:15:10,585 INFO  DownloadUtilityLogger.Logger [5] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/15/25 16:15:10,585 INFO  DownloadUtilityLogger.Logger [5] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/15/25 16:15:10,610 INFO  DownloadUtilityLogger.Logger [5] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/18/25 16:18:21,117 INFO  DownloadUtilityLogger.Logger [8] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/18/25 16:18:21,125 INFO  DownloadUtilityLogger.Logger [8] Delimiter config value: , 
+2019/18/25 16:18:21,125 INFO  DownloadUtilityLogger.Logger [8] Sources parsing delimiter: , 
+2019/18/25 16:18:21,125 INFO  DownloadUtilityLogger.Logger [8] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/18/25 16:18:21,126 INFO  DownloadUtilityLogger.Logger [8] sourses Urls counts after parsing: 2 
+2019/18/25 16:18:21,128 INFO  DownloadUtilityLogger.Logger [9] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/18/25 16:18:21,128 INFO  DownloadUtilityLogger.Logger [9] tempFileDir object is created. 
+2019/18/25 16:18:21,128 INFO  DownloadUtilityLogger.Logger [8] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/18/25 16:18:21,128 INFO  DownloadUtilityLogger.Logger [8] tempFileDir object is created. 
+2019/18/25 16:18:21,533 INFO  DownloadUtilityLogger.Logger [9] BufferSize config value: 2048 
+2019/18/25 16:18:35,090 INFO  DownloadUtilityLogger.Logger [9] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/18/25 16:18:35,090 INFO  DownloadUtilityLogger.Logger [9] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/18/25 16:18:35,264 INFO  DownloadUtilityLogger.Logger [9] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/18/25 16:18:35,769 INFO  DownloadUtilityLogger.Logger [8] BufferSize config value: 2048 
+2019/19/25 16:19:10,389 INFO  DownloadUtilityLogger.Logger [8] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/19/25 16:19:10,423 INFO  DownloadUtilityLogger.Logger [8] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/19/25 16:19:16,487 INFO  DownloadUtilityLogger.Logger [9] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/19/25 16:19:16,487 INFO  DownloadUtilityLogger.Logger [9] Delimiter config value: , 
+2019/19/25 16:19:16,487 INFO  DownloadUtilityLogger.Logger [9] Sources parsing delimiter: , 
+2019/19/25 16:19:16,487 INFO  DownloadUtilityLogger.Logger [9] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/19/25 16:19:16,487 INFO  DownloadUtilityLogger.Logger [9] sourses Urls counts after parsing: 2 
+2019/19/25 16:19:16,487 INFO  DownloadUtilityLogger.Logger [9] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/19/25 16:19:16,487 INFO  DownloadUtilityLogger.Logger [8] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/19/25 16:19:16,487 INFO  DownloadUtilityLogger.Logger [8] tempFileDir object is created. 
+2019/19/25 16:19:16,487 INFO  DownloadUtilityLogger.Logger [9] tempFileDir object is created. 
+2019/19/25 16:19:16,590 INFO  DownloadUtilityLogger.Logger [8] BufferSize config value: 2048 
+2019/19/25 16:19:21,121 INFO  DownloadUtilityLogger.Logger [8] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/19/25 16:19:21,121 INFO  DownloadUtilityLogger.Logger [8] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/19/25 16:19:21,140 INFO  DownloadUtilityLogger.Logger [8] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/19/25 16:19:21,959 INFO  DownloadUtilityLogger.Logger [9] BufferSize config value: 2048 
+2019/24/25 16:24:13,936 INFO  DownloadUtilityLogger.Logger [10] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/24/25 16:24:13,944 INFO  DownloadUtilityLogger.Logger [10] Delimiter config value: , 
+2019/24/25 16:24:13,944 INFO  DownloadUtilityLogger.Logger [10] Sources parsing delimiter: , 
+2019/24/25 16:24:13,944 INFO  DownloadUtilityLogger.Logger [10] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/24/25 16:24:13,944 INFO  DownloadUtilityLogger.Logger [10] sourses Urls counts after parsing: 2 
+2019/24/25 16:24:13,949 INFO  DownloadUtilityLogger.Logger [10] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/24/25 16:24:13,949 INFO  DownloadUtilityLogger.Logger [10] tempFileDir object is created. 
+2019/24/25 16:24:13,949 INFO  DownloadUtilityLogger.Logger [8] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/24/25 16:24:13,950 INFO  DownloadUtilityLogger.Logger [8] tempFileDir object is created. 
+2019/24/25 16:24:14,409 INFO  DownloadUtilityLogger.Logger [8] BufferSize config value: 2048 
+2019/24/25 16:24:20,659 INFO  DownloadUtilityLogger.Logger [8] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/24/25 16:24:20,659 INFO  DownloadUtilityLogger.Logger [8] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/24/25 16:24:20,845 INFO  DownloadUtilityLogger.Logger [8] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/24/25 16:24:21,163 INFO  DownloadUtilityLogger.Logger [10] BufferSize config value: 2048 
+2019/28/25 16:28:23,471 INFO  DownloadUtilityLogger.Logger [9] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/28/25 16:28:23,480 INFO  DownloadUtilityLogger.Logger [9] Delimiter config value: , 
+2019/28/25 16:28:23,480 INFO  DownloadUtilityLogger.Logger [9] Sources parsing delimiter: , 
+2019/28/25 16:28:23,480 INFO  DownloadUtilityLogger.Logger [9] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/28/25 16:28:23,480 INFO  DownloadUtilityLogger.Logger [9] sourses Urls counts after parsing: 2 
+2019/28/25 16:28:23,483 INFO  DownloadUtilityLogger.Logger [8] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/28/25 16:28:23,483 INFO  DownloadUtilityLogger.Logger [8] tempFileDir object is created. 
+2019/28/25 16:28:23,483 INFO  DownloadUtilityLogger.Logger [9] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/28/25 16:28:23,483 INFO  DownloadUtilityLogger.Logger [9] tempFileDir object is created. 
+2019/28/25 16:28:23,933 INFO  DownloadUtilityLogger.Logger [8] BufferSize config value: 2048 
+2019/28/25 16:28:29,554 INFO  DownloadUtilityLogger.Logger [8] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/28/25 16:28:29,555 INFO  DownloadUtilityLogger.Logger [8] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/28/25 16:28:29,747 INFO  DownloadUtilityLogger.Logger [8] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/28/25 16:28:30,100 INFO  DownloadUtilityLogger.Logger [9] BufferSize config value: 2048 
+2019/28/25 16:28:36,694 INFO  DownloadUtilityLogger.Logger [9] Download file ftp://speedtest.tele2.net/5MB.zip didn't complete 
+2019/29/25 16:29:22,209 INFO  DownloadUtilityLogger.Logger [10] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/29/25 16:29:22,210 INFO  DownloadUtilityLogger.Logger [10] Delimiter config value: , 
+2019/29/25 16:29:22,210 INFO  DownloadUtilityLogger.Logger [10] Sources parsing delimiter: , 
+2019/29/25 16:29:22,210 INFO  DownloadUtilityLogger.Logger [10] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/29/25 16:29:22,210 INFO  DownloadUtilityLogger.Logger [10] sourses Urls counts after parsing: 2 
+2019/29/25 16:29:22,210 INFO  DownloadUtilityLogger.Logger [10] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/29/25 16:29:22,210 INFO  DownloadUtilityLogger.Logger [8] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/29/25 16:29:22,210 INFO  DownloadUtilityLogger.Logger [8] tempFileDir object is created. 
+2019/29/25 16:29:22,210 INFO  DownloadUtilityLogger.Logger [10] tempFileDir object is created. 
+2019/29/25 16:29:22,316 INFO  DownloadUtilityLogger.Logger [8] BufferSize config value: 2048 
+2019/29/25 16:29:24,859 INFO  DownloadUtilityLogger.Logger [8] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/29/25 16:29:24,859 INFO  DownloadUtilityLogger.Logger [8] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/29/25 16:29:24,876 INFO  DownloadUtilityLogger.Logger [8] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/29/25 16:29:25,626 INFO  DownloadUtilityLogger.Logger [10] BufferSize config value: 2048 
+2019/29/25 16:29:28,134 INFO  DownloadUtilityLogger.Logger [10] Download file ftp://speedtest.tele2.net/5MB.zip didn't complete 
+2019/30/25 16:30:46,488 INFO  DownloadUtilityLogger.Logger [11] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/30/25 16:30:46,495 INFO  DownloadUtilityLogger.Logger [11] Delimiter config value: , 
+2019/30/25 16:30:46,495 INFO  DownloadUtilityLogger.Logger [11] Sources parsing delimiter: , 
+2019/30/25 16:30:46,495 INFO  DownloadUtilityLogger.Logger [11] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/30/25 16:30:46,496 INFO  DownloadUtilityLogger.Logger [11] sourses Urls counts after parsing: 2 
+2019/30/25 16:30:46,502 INFO  DownloadUtilityLogger.Logger [11] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/30/25 16:30:46,502 INFO  DownloadUtilityLogger.Logger [11] tempFileDir object is created. 
+2019/30/25 16:30:46,502 INFO  DownloadUtilityLogger.Logger [8] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/30/25 16:30:46,502 INFO  DownloadUtilityLogger.Logger [8] tempFileDir object is created. 
+2019/30/25 16:30:46,927 INFO  DownloadUtilityLogger.Logger [8] BufferSize config value: 2048 
+2019/30/25 16:30:50,691 INFO  DownloadUtilityLogger.Logger [8] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/30/25 16:30:50,691 INFO  DownloadUtilityLogger.Logger [8] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/30/25 16:30:50,874 INFO  DownloadUtilityLogger.Logger [8] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/30/25 16:30:51,246 INFO  DownloadUtilityLogger.Logger [11] BufferSize config value: 2048 
+2019/31/25 16:31:29,403 INFO  DownloadUtilityLogger.Logger [11] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/31/25 16:31:29,403 INFO  DownloadUtilityLogger.Logger [11] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/31/25 16:31:29,424 INFO  DownloadUtilityLogger.Logger [11] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/31/25 16:31:43,582 INFO  DownloadUtilityLogger.Logger [9] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/31/25 16:31:43,582 INFO  DownloadUtilityLogger.Logger [9] Delimiter config value: , 
+2019/31/25 16:31:43,582 INFO  DownloadUtilityLogger.Logger [9] Sources parsing delimiter: , 
+2019/31/25 16:31:43,582 INFO  DownloadUtilityLogger.Logger [9] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/31/25 16:31:43,582 INFO  DownloadUtilityLogger.Logger [9] sourses Urls counts after parsing: 2 
+2019/31/25 16:31:43,582 INFO  DownloadUtilityLogger.Logger [9] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/31/25 16:31:43,582 INFO  DownloadUtilityLogger.Logger [10] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/31/25 16:31:43,582 INFO  DownloadUtilityLogger.Logger [9] tempFileDir object is created. 
+2019/31/25 16:31:43,582 INFO  DownloadUtilityLogger.Logger [10] tempFileDir object is created. 
+2019/31/25 16:31:43,673 INFO  DownloadUtilityLogger.Logger [10] BufferSize config value: 2048 
+2019/31/25 16:31:46,475 INFO  DownloadUtilityLogger.Logger [10] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/31/25 16:31:46,475 INFO  DownloadUtilityLogger.Logger [10] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/31/25 16:31:46,497 INFO  DownloadUtilityLogger.Logger [10] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/31/25 16:31:46,573 INFO  DownloadUtilityLogger.Logger [9] BufferSize config value: 2048 
+2019/32/25 16:32:15,893 INFO  DownloadUtilityLogger.Logger [9] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/32/25 16:32:15,893 INFO  DownloadUtilityLogger.Logger [9] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/32/25 16:32:15,936 INFO  DownloadUtilityLogger.Logger [9] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/46/25 16:46:40,593 INFO  DownloadUtilityLogger.Logger [6] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/46/25 16:46:40,601 INFO  DownloadUtilityLogger.Logger [6] Delimiter config value: , 
+2019/46/25 16:46:40,601 INFO  DownloadUtilityLogger.Logger [6] Sources parsing delimiter: , 
+2019/46/25 16:46:40,601 INFO  DownloadUtilityLogger.Logger [6] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/46/25 16:46:40,602 INFO  DownloadUtilityLogger.Logger [6] sourses Urls counts after parsing: 2 
+2019/46/25 16:46:40,606 INFO  DownloadUtilityLogger.Logger [5] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/46/25 16:46:40,606 INFO  DownloadUtilityLogger.Logger [5] tempFileDir object is created. 
+2019/46/25 16:46:40,606 INFO  DownloadUtilityLogger.Logger [6] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/46/25 16:46:40,606 INFO  DownloadUtilityLogger.Logger [6] tempFileDir object is created. 
+2019/46/25 16:46:41,057 INFO  DownloadUtilityLogger.Logger [5] BufferSize config value: 2048 
+2019/46/25 16:46:49,122 INFO  DownloadUtilityLogger.Logger [5] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/46/25 16:46:49,122 INFO  DownloadUtilityLogger.Logger [5] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/46/25 16:46:49,313 INFO  DownloadUtilityLogger.Logger [5] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/46/25 16:46:49,745 INFO  DownloadUtilityLogger.Logger [6] BufferSize config value: 2048 
+2019/47/25 16:47:23,165 INFO  DownloadUtilityLogger.Logger [6] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/47/25 16:47:23,165 INFO  DownloadUtilityLogger.Logger [6] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/47/25 16:47:23,187 INFO  DownloadUtilityLogger.Logger [6] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/47/25 16:47:35,663 INFO  DownloadUtilityLogger.Logger [6] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/47/25 16:47:35,663 INFO  DownloadUtilityLogger.Logger [6] Delimiter config value: , 
+2019/47/25 16:47:35,663 INFO  DownloadUtilityLogger.Logger [6] Sources parsing delimiter: , 
+2019/47/25 16:47:35,663 INFO  DownloadUtilityLogger.Logger [6] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/47/25 16:47:35,663 INFO  DownloadUtilityLogger.Logger [6] sourses Urls counts after parsing: 2 
+2019/47/25 16:47:35,663 INFO  DownloadUtilityLogger.Logger [6] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/47/25 16:47:35,663 INFO  DownloadUtilityLogger.Logger [7] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/47/25 16:47:35,663 INFO  DownloadUtilityLogger.Logger [6] tempFileDir object is created. 
+2019/47/25 16:47:35,663 INFO  DownloadUtilityLogger.Logger [7] tempFileDir object is created. 
+2019/47/25 16:47:35,747 INFO  DownloadUtilityLogger.Logger [7] BufferSize config value: 2048 
+2019/47/25 16:47:35,758 INFO  DownloadUtilityLogger.Logger [7] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/47/25 16:47:35,758 INFO  DownloadUtilityLogger.Logger [7] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/47/25 16:47:35,791 INFO  DownloadUtilityLogger.Logger [7] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/47/25 16:47:35,984 INFO  DownloadUtilityLogger.Logger [6] BufferSize config value: 2048 
+2019/48/25 16:48:08,615 INFO  DownloadUtilityLogger.Logger [6] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/48/25 16:48:08,615 INFO  DownloadUtilityLogger.Logger [6] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/48/25 16:48:08,682 INFO  DownloadUtilityLogger.Logger [6] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/20/25 17:20:39,651 INFO  DownloadUtilityLogger.FileLogger [5] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/20/25 17:20:39,658 INFO  DownloadUtilityLogger.FileLogger [5] Delimiter config value: , 
+2019/20/25 17:20:39,658 INFO  DownloadUtilityLogger.FileLogger [5] Sources parsing delimiter: , 
+2019/20/25 17:20:39,658 INFO  DownloadUtilityLogger.FileLogger [5] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/20/25 17:20:39,658 INFO  DownloadUtilityLogger.FileLogger [5] sourses Urls counts after parsing: 2 
+2019/20/25 17:20:39,661 INFO  DownloadUtilityLogger.FileLogger [6] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/20/25 17:20:39,661 INFO  DownloadUtilityLogger.FileLogger [6] tempFileDir object is created. 
+2019/20/25 17:20:39,661 INFO  DownloadUtilityLogger.FileLogger [5] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/20/25 17:20:39,661 INFO  DownloadUtilityLogger.FileLogger [5] tempFileDir object is created. 
+2019/20/25 17:20:40,105 INFO  DownloadUtilityLogger.FileLogger [6] BufferSize config value: 2048 
+2019/20/25 17:20:40,138 INFO  DownloadUtilityLogger.FileLogger [6] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/20/25 17:20:40,138 INFO  DownloadUtilityLogger.FileLogger [6] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/22/25 17:22:07,148 INFO  DownloadUtilityLogger.FileLogger [10] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/22/25 17:22:07,155 INFO  DownloadUtilityLogger.FileLogger [10] Delimiter config value: , 
+2019/22/25 17:22:07,155 INFO  DownloadUtilityLogger.FileLogger [10] Sources parsing delimiter: , 
+2019/22/25 17:22:07,155 INFO  DownloadUtilityLogger.FileLogger [10] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/22/25 17:22:07,155 INFO  DownloadUtilityLogger.FileLogger [10] sourses Urls counts after parsing: 2 
+2019/22/25 17:22:07,159 INFO  DownloadUtilityLogger.FileLogger [8] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/22/25 17:22:07,159 INFO  DownloadUtilityLogger.FileLogger [8] tempFileDir object is created. 
+2019/22/25 17:22:07,159 INFO  DownloadUtilityLogger.FileLogger [10] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/22/25 17:22:07,159 INFO  DownloadUtilityLogger.FileLogger [10] tempFileDir object is created. 
+2019/22/25 17:22:07,569 INFO  DownloadUtilityLogger.FileLogger [8] BufferSize config value: 2048 
+2019/22/25 17:22:07,601 INFO  DownloadUtilityLogger.FileLogger [8] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/22/25 17:22:07,601 INFO  DownloadUtilityLogger.FileLogger [8] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/22/25 17:22:14,742 INFO  DownloadUtilityLogger.FileLogger [8] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/22/25 17:22:15,099 INFO  DownloadUtilityLogger.FileLogger [10] BufferSize config value: 2048 
+2019/22/25 17:22:54,228 INFO  DownloadUtilityLogger.FileLogger [10] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/22/25 17:22:54,228 INFO  DownloadUtilityLogger.FileLogger [10] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/25/25 19:25:32,478 INFO  DownloadUtilityLogger.FileLogger [9] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/25/25 19:25:32,485 INFO  DownloadUtilityLogger.FileLogger [9] Delimiter config value: , 
+2019/25/25 19:25:32,485 INFO  DownloadUtilityLogger.FileLogger [9] Sources parsing delimiter: , 
+2019/25/25 19:25:32,486 INFO  DownloadUtilityLogger.FileLogger [9] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/25/25 19:25:32,486 INFO  DownloadUtilityLogger.FileLogger [9] sourses Urls counts after parsing: 2 
+2019/25/25 19:25:32,489 INFO  DownloadUtilityLogger.FileLogger [8] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/25/25 19:25:32,489 INFO  DownloadUtilityLogger.FileLogger [8] tempFileDir object is created. 
+2019/25/25 19:25:32,489 INFO  DownloadUtilityLogger.FileLogger [9] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/25/25 19:25:32,489 INFO  DownloadUtilityLogger.FileLogger [9] tempFileDir object is created. 
+2019/25/25 19:25:32,952 INFO  DownloadUtilityLogger.FileLogger [8] BufferSize config value: 2048 
+2019/25/25 19:25:32,992 INFO  DownloadUtilityLogger.FileLogger [8] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/25/25 19:25:32,992 INFO  DownloadUtilityLogger.FileLogger [8] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/25/25 19:25:42,740 INFO  DownloadUtilityLogger.FileLogger [8] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/25/25 19:25:43,232 INFO  DownloadUtilityLogger.FileLogger [9] BufferSize config value: 2048 
+2019/26/25 19:26:21,133 INFO  DownloadUtilityLogger.FileLogger [9] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/26/25 19:26:21,133 INFO  DownloadUtilityLogger.FileLogger [9] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/29/25 19:29:27,888 INFO  DownloadUtilityLogger.FileLogger [11] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/29/25 19:29:27,888 INFO  DownloadUtilityLogger.FileLogger [11] Delimiter config value: , 
+2019/29/25 19:29:27,888 INFO  DownloadUtilityLogger.FileLogger [11] Sources parsing delimiter: , 
+2019/29/25 19:29:27,888 INFO  DownloadUtilityLogger.FileLogger [11] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/29/25 19:29:27,888 INFO  DownloadUtilityLogger.FileLogger [11] sourses Urls counts after parsing: 2 
+2019/29/25 19:29:27,888 INFO  DownloadUtilityLogger.FileLogger [11] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/29/25 19:29:27,888 INFO  DownloadUtilityLogger.FileLogger [14] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/29/25 19:29:27,888 INFO  DownloadUtilityLogger.FileLogger [14] tempFileDir object is created. 
+2019/29/25 19:29:27,888 INFO  DownloadUtilityLogger.FileLogger [11] tempFileDir object is created. 
+2019/29/25 19:29:28,224 INFO  DownloadUtilityLogger.FileLogger [14] BufferSize config value: 2048 
+2019/29/25 19:29:28,238 INFO  DownloadUtilityLogger.FileLogger [14] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/29/25 19:29:28,238 INFO  DownloadUtilityLogger.FileLogger [14] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/29/25 19:29:30,904 INFO  DownloadUtilityLogger.FileLogger [14] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/29/25 19:29:31,600 INFO  DownloadUtilityLogger.FileLogger [11] BufferSize config value: 2048 
+2019/30/25 19:30:05,270 INFO  DownloadUtilityLogger.FileLogger [11] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/30/25 19:30:05,270 INFO  DownloadUtilityLogger.FileLogger [11] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/30/25 19:30:48,246 INFO  DownloadUtilityLogger.FileLogger [14] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/30/25 19:30:48,246 INFO  DownloadUtilityLogger.FileLogger [14] Delimiter config value: , 
+2019/30/25 19:30:48,246 INFO  DownloadUtilityLogger.FileLogger [14] Sources parsing delimiter: , 
+2019/30/25 19:30:48,246 INFO  DownloadUtilityLogger.FileLogger [14] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/30/25 19:30:48,247 INFO  DownloadUtilityLogger.FileLogger [14] sourses Urls counts after parsing: 2 
+2019/30/25 19:30:48,247 INFO  DownloadUtilityLogger.FileLogger [14] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/30/25 19:30:48,247 INFO  DownloadUtilityLogger.FileLogger [20] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/30/25 19:30:48,247 INFO  DownloadUtilityLogger.FileLogger [14] tempFileDir object is created. 
+2019/30/25 19:30:48,247 INFO  DownloadUtilityLogger.FileLogger [20] tempFileDir object is created. 
+2019/30/25 19:30:48,361 INFO  DownloadUtilityLogger.FileLogger [20] BufferSize config value: 2048 
+2019/30/25 19:30:48,363 INFO  DownloadUtilityLogger.FileLogger [20] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/30/25 19:30:48,364 INFO  DownloadUtilityLogger.FileLogger [20] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/30/25 19:30:54,570 INFO  DownloadUtilityLogger.FileLogger [20] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/30/25 19:30:54,658 INFO  DownloadUtilityLogger.FileLogger [14] BufferSize config value: 2048 
+2019/31/25 19:31:29,129 INFO  DownloadUtilityLogger.FileLogger [14] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/31/25 19:31:29,130 INFO  DownloadUtilityLogger.FileLogger [14] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/35/25 19:35:12,524 INFO  DownloadUtilityLogger.FileLogger [12] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/35/25 19:35:12,531 INFO  DownloadUtilityLogger.FileLogger [12] Delimiter config value: , 
+2019/35/25 19:35:12,531 INFO  DownloadUtilityLogger.FileLogger [12] Sources parsing delimiter: , 
+2019/35/25 19:35:12,531 INFO  DownloadUtilityLogger.FileLogger [12] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/35/25 19:35:12,532 INFO  DownloadUtilityLogger.FileLogger [12] sourses Urls counts after parsing: 2 
+2019/35/25 19:35:12,534 INFO  DownloadUtilityLogger.FileLogger [13] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/35/25 19:35:12,535 INFO  DownloadUtilityLogger.FileLogger [13] tempFileDir object is created. 
+2019/35/25 19:35:12,535 INFO  DownloadUtilityLogger.FileLogger [12] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/35/25 19:35:12,535 INFO  DownloadUtilityLogger.FileLogger [12] tempFileDir object is created. 
+2019/35/25 19:35:13,029 INFO  DownloadUtilityLogger.FileLogger [13] BufferSize config value: 2048 
+2019/35/25 19:35:13,066 INFO  DownloadUtilityLogger.FileLogger [13] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/35/25 19:35:13,066 INFO  DownloadUtilityLogger.FileLogger [13] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/35/25 19:35:13,255 INFO  DownloadUtilityLogger.FileLogger [13] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/35/25 19:35:13,787 INFO  DownloadUtilityLogger.FileLogger [12] BufferSize config value: 2048 
+2019/35/25 19:35:51,944 INFO  DownloadUtilityLogger.FileLogger [12] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/35/25 19:35:51,944 INFO  DownloadUtilityLogger.FileLogger [12] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/35/25 19:35:51,986 INFO  DownloadUtilityLogger.FileLogger [12] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/36/25 19:36:06,707 INFO  DownloadUtilityLogger.FileLogger [17] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/36/25 19:36:06,707 INFO  DownloadUtilityLogger.FileLogger [17] Delimiter config value: , 
+2019/36/25 19:36:06,708 INFO  DownloadUtilityLogger.FileLogger [17] Sources parsing delimiter: , 
+2019/36/25 19:36:06,708 INFO  DownloadUtilityLogger.FileLogger [17] LocalDirectory config value: C:\Temp\DownloadedFiles 
+2019/36/25 19:36:06,708 INFO  DownloadUtilityLogger.FileLogger [17] sourses Urls counts after parsing: 2 
+2019/36/25 19:36:06,708 INFO  DownloadUtilityLogger.FileLogger [17] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/36/25 19:36:06,708 INFO  DownloadUtilityLogger.FileLogger [12] tempFileDirPath: C:\Temp\DownloadedFiles 
+2019/36/25 19:36:06,708 INFO  DownloadUtilityLogger.FileLogger [12] tempFileDir object is created. 
+2019/36/25 19:36:06,708 INFO  DownloadUtilityLogger.FileLogger [17] tempFileDir object is created. 
+2019/36/25 19:36:06,812 INFO  DownloadUtilityLogger.FileLogger [12] BufferSize config value: 2048 
+2019/36/25 19:36:06,815 INFO  DownloadUtilityLogger.FileLogger [12] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/36/25 19:36:06,815 INFO  DownloadUtilityLogger.FileLogger [12] Local path is: C:\Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/36/25 19:36:06,834 INFO  DownloadUtilityLogger.FileLogger [12] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/36/25 19:36:10,055 INFO  DownloadUtilityLogger.FileLogger [17] BufferSize config value: 2048 
+2019/36/25 19:36:48,591 INFO  DownloadUtilityLogger.FileLogger [17] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/36/25 19:36:48,591 INFO  DownloadUtilityLogger.FileLogger [17] Local path is: C:\Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/36/25 19:36:48,656 INFO  DownloadUtilityLogger.FileLogger [17] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 

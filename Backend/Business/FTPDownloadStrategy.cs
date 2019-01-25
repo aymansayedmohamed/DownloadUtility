@@ -1,5 +1,6 @@
 ﻿using DownloadUtilityLogger;
 using IBusiness;
+using IBusiness.IHelpers;
 using Renci.SshNet;
 using System;
 using System.Configuration;
@@ -11,11 +12,14 @@ namespace Business
     public class FTPDownloadStrategy : IDownloadStrategy
     {
         private readonly ILogger logger;
+        private readonly IIOHelper iOHelper;
+
         private readonly string protocol = "FTP";
 
-        public FTPDownloadStrategy(ILogger logger)
+        public FTPDownloadStrategy(ILogger logger, IIOHelper iOHelper)
         {
             this.logger = logger;
+            this.iOHelper = iOHelper;
         }
 
         public bool IsMatch(string protocol)
@@ -36,9 +40,10 @@ namespace Business
         private string DownloadFTPFile(string remoteFtpPath, string localPath, string username, string password)
         {
             string localDestinationPath = string.Empty;
+
             try
             {
-                localDestinationPath = GetLocalDestinationPath(remoteFtpPath, localPath);
+                localDestinationPath = iOHelper.GetLocalDestinationPath(remoteFtpPath, localPath);
 
                 FtpWebRequest request = (FtpWebRequest)WebRequest.Create(remoteFtpPath);
 
@@ -50,8 +55,6 @@ namespace Business
 
                 Stream responseStream = response.GetResponseStream();
 
-                StreamReader reader = new StreamReader(responseStream);
-
                 var bufferSizeConfigValue = ConfigurationManager.AppSettings["BufferSize"];
                 logger.AddInformationLog($"BufferSize config value: {bufferSizeConfigValue}");
 
@@ -59,8 +62,6 @@ namespace Business
 
                 using (FileStream writer = new FileStream(localDestinationPath, FileMode.Create))
                 {
-                    long length = response.ContentLength;
-
                     byte[] buffer = new byte[bufferSize];
 
                     int readCount = responseStream.Read(buffer, 0, bufferSize);
@@ -74,7 +75,6 @@ namespace Business
 
                 logger.AddInformationLog($"Download file {remoteFtpPath} completed");
 
-                reader.Close();
                 response.Close();
 
                 return localDestinationPath;
@@ -93,35 +93,5 @@ namespace Business
             }
         }
 
-        private string GetLocalDestinationPath(string remoteFtpPath, string localPath)
-        {
-            string tempFileDirPath = localPath;
-
-            if(string.IsNullOrEmpty(tempFileDirPath))
-            {
-                tempFileDirPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Temp");
-            }
-                
-            logger.AddInformationLog(nameof(tempFileDirPath) + ": " + tempFileDirPath);
-
-            DirectoryInfo tempFileDir = new DirectoryInfo(tempFileDirPath);
-
-            logger.AddInformationLog(nameof(tempFileDir) + " object is created.");
-
-            if (!tempFileDir.Exists)
-            {
-                logger.AddInformationLog(nameof(tempFileDir) + " not exists.");
-
-                tempFileDir.Create();
-
-                logger.AddInformationLog(nameof(tempFileDir) + " created.");
-            }
-
-            string fileName = remoteFtpPath.Substring(remoteFtpPath.LastIndexOf(@"/") + 1);
-
-            string localDestinationPath =Path.Combine(tempFileDir.FullName,fileName);
-
-            return localDestinationPath;
-        }
     }
 }

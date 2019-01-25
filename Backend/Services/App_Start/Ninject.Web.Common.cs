@@ -4,9 +4,11 @@
 namespace Services
 {
     using Business;
+    using Business.Helpers;
     using DataAccess;
     using DownloadUtilityLogger;
     using IBusiness;
+    using IBusiness.IHelpers;
     using IDataAccess;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
     using Ninject;
@@ -57,7 +59,7 @@ namespace Services
             }
             catch
             {
-                kernel.Dispose();
+                kernel?.Dispose();
                 throw;
             }
         }
@@ -68,17 +70,21 @@ namespace Services
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InSingletonScope();
+            kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InTransientScope();
 
-            kernel.Bind(typeof(IRepository<>)).To(typeof(Repository<>)).InRequestScope();
+            kernel.Bind(typeof(IRepository<>)).To(typeof(Repository<>)).InTransientScope();
 
-            kernel.Bind<ILogger>().To<Logger>().InSingletonScope();
+            kernel.Bind<ILogger>().To<FileLogger>().InSingletonScope();
+
+            kernel.Bind<IIOHelper>().To<IOHelper>().InRequestScope();
 
             kernel.Bind<IParser>().To<SourcesParser>().InRequestScope();
 
             kernel.Bind<IDownloadStrategy>().To<FTPDownloadStrategy>().InThreadScope();
 
             kernel.Bind<IDownloadStrategy>().To<SFTPDownloadStrategy>().InThreadScope();
+
+            kernel.Bind<IDownloadStrategy>().To<UriDownloadStrategy>().InThreadScope();
 
             kernel.Bind<IDownloadStrategyFactory>().To<DownloadStrategyFactory>().InRequestScope();
 

@@ -10,13 +10,13 @@ namespace DataAccess
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        private UnitOfWork _unitOfWork;
+        private IUnitOfWork _unitOfWork;
         public Repository(IUnitOfWork unitOfWork)
         {
-            _unitOfWork = (UnitOfWork)unitOfWork;
+            _unitOfWork = unitOfWork;
         }
 
-        protected DbContext dbContext { get { return _unitOfWork.dbContext; } }
+        protected DbContext dbContext { get { return _unitOfWork.DbContext; } }
 
         public IQueryable<T> GetAll()
         {
@@ -51,7 +51,7 @@ namespace DataAccess
 
         public void Dispose()
         {
-            dbContext.Dispose();
+            _unitOfWork?.Dispose();
         }
 
     }

@@ -9,3 +9,10 @@ D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDataA
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDataAccess\obj\Debug\IDataAccess.csproj.CoreCompileInputs.cache
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDataAccess\obj\Debug\IDataAccess.dll
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDataAccess\obj\Debug\IDataAccess.pdb
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDataAccess\bin\Debug\IDataAccess.dll.config
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDataAccess\bin\Debug\EntityFramework.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDataAccess\bin\Debug\EntityFramework.xml
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDataAccess\obj\Debug\IDataAccess.csprojAssemblyReference.cache
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDataAccess\obj\Debug\IDataAccess.csproj.CopyComplete

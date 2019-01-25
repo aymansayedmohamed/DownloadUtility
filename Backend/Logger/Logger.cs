@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace DownloadUtilityLogger
 {
-    public class Logger : ILogger
+    public class FileLogger : ILogger
     {
 
         private static log4net.ILog Log { get; set; }
 
-        public Logger()
+        public FileLogger()
         {
-            Log = log4net.LogManager.GetLogger(typeof(Logger));
+            Log = log4net.LogManager.GetLogger(typeof(FileLogger));
         }
 
 

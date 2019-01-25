@@ -7,16 +7,16 @@ namespace DataAccess
     {
         private DbContextTransaction _transaction;
 
-        public DbContext dbContext { get; private set; }
+        public DbContext DbContext { get ; private set ; }
 
         public UnitOfWork()
         {
-            dbContext = new DownloadUtilityEntities();
+            DbContext = new DownloadUtilityEntities();
         }
 
         public void BeginTransaction()
         {
-            _transaction = dbContext.Database.BeginTransaction();
+            _transaction = DbContext.Database.BeginTransaction();
         }
 
         public void Commit()
@@ -27,6 +27,11 @@ namespace DataAccess
         public void Rollback()
         {
             _transaction?.Rollback();
+        }
+
+        public void Dispose()
+        {
+            DbContext?.Dispose();
         }
     }
 }
