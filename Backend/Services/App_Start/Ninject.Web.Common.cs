@@ -70,7 +70,12 @@ namespace Services
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InTransientScope();
+
+            kernel.Bind<IDomainModels.IDownloadedFile>().To<DomainModels.DownloadedFile>().InTransientScope();
+
+            kernel.Bind<IDomainModels.IProcessingStatus>().To<DomainModels.ProcessingStatu>().InTransientScope();
+
+            kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InRequestScope();
 
             kernel.Bind(typeof(IRepository<>)).To(typeof(Repository<>)).InTransientScope();
 

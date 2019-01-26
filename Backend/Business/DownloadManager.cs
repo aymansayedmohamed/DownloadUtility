@@ -8,22 +8,25 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
-
+using IViewModels;
 namespace Business
 {
     public class DownloadManager : IDownloadManager
     {
         private readonly IParser parser;
         private readonly IDownloadStrategyFactory downloadStrategyFactory;
-        private IRepository<DownloadedFile> repoDownloadedFile;
+        private IRepository<DomainModels.DownloadedFile> repoDownloadedFile; //to do use interface
+        private IRepository<DomainModels.ProcessingStatu> repoProcessingStatus; //to do use interface
         private readonly ILogger logger;
 
 
-        public DownloadManager(IParser parser, IDownloadStrategyFactory downloadStrategyFactory, IRepository<DownloadedFile> repoDownloadedFile, ILogger logger)
+        public DownloadManager(IParser parser, IDownloadStrategyFactory downloadStrategyFactory, IRepository<DomainModels.DownloadedFile> repoDownloadedFile
+             , IRepository<DomainModels.ProcessingStatu> repoProcessingStatus, ILogger logger)
         {
             this.parser = parser;
             this.downloadStrategyFactory = downloadStrategyFactory;
             this.repoDownloadedFile = repoDownloadedFile;
+            this.repoProcessingStatus = repoProcessingStatus;
             this.logger = logger;
 
         }
@@ -57,7 +60,7 @@ namespace Business
                         string localDestinationPath = downloadStrategy.Download(url, localPath);
                         logger.AddInformationLog($"Local path is: {localPath} for URL: {url} ");
 
-                        repoDownloadedFile.Add(new DownloadedFile()
+                        repoDownloadedFile.Add(new DomainModels.DownloadedFile()
                         {
                             FileRemotePath = url,
                             LocalPath = localDestinationPath,
@@ -81,5 +84,56 @@ namespace Business
             }
 
         }
+
+        public IQueryable<IDownloadedFile> GetReadyForProcessingFiles()
+        {
+
+            return
+                (from file in repoDownloadedFile.GetAll()
+                 join status in repoProcessingStatus.GetAll()
+                 on file.ProcessingStatus equals status.Id
+                 where file.ProcessingStatus == (int)DownloadStatutes.ReadyForProcessing
+                 select new ViewModels.DownloadedFile()
+                 {
+                     Id = file.Id,
+                     Source = file.FileRemotePath,
+                     Url = file.LocalPath,
+                     ProcessingStatusId = file.ProcessingStatus,
+                     ProcessingStatus = status.Status
+                 }).AsQueryable();
+        }
+
+
+
+        public IDownloadedFile RejectFile(IDownloadedFile file)
+        {
+            return UpdateStatus(file,DownloadStatutes.Rejected);
+        }
+        public IDownloadedFile ApproveFile(IDownloadedFile file)
+        {
+            return UpdateStatus(file, DownloadStatutes.Approved);
+        }
+
+        private IDownloadedFile UpdateStatus(IDownloadedFile file, DownloadStatutes statuts)
+        {
+            using (repoDownloadedFile)
+            {
+                var domainFile = repoDownloadedFile.Find(file.Id);
+
+                domainFile.ProcessingStatus = (int)statuts;
+
+                repoDownloadedFile.SaveChanges();
+
+                return new ViewModels.DownloadedFile()
+                {
+                    Id = file.Id,
+                    ProcessingStatus = statuts.ToString(),
+                    Source = file.Source,
+                    ProcessingStatusId = domainFile.ProcessingStatus,
+                    Url = file.Url
+                };
+            }
+        }
+
     }
 }

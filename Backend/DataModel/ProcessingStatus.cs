@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace DomainModels
 {
+    using IDomainModels;
     using System.Collections.Generic;
 
-    public partial class ProcessingStatu
+    public partial class ProcessingStatu: IProcessingStatus
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public ProcessingStatu()

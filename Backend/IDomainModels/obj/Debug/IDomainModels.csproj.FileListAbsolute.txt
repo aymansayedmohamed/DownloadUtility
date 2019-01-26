@@ -1,0 +1,6 @@
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDomainModels\bin\Debug\IDomainModels.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDomainModels\bin\Debug\IDomainModels.pdb
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDomainModels\obj\Debug\IDomainModels.csprojAssemblyReference.cache
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDomainModels\obj\Debug\IDomainModels.csproj.CoreCompileInputs.cache
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDomainModels\obj\Debug\IDomainModels.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\IDomainModels\obj\Debug\IDomainModels.pdb

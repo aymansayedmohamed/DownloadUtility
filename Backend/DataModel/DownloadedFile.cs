@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DomainModels;
+using IDomainModels;
+
 namespace DomainModels
 {
-    public partial class DownloadedFile
+    public partial class DownloadedFile : IDownloadedFile
     {
         public int Id { get; set; }
         public string FileRemotePath { get; set; }

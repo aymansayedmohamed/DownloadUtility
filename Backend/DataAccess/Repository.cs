@@ -23,7 +23,7 @@ namespace DataAccess
             return dbContext.Set<T>().AsQueryable();
         }
 
-        public T GetById(int id)
+        public T Find(int id)
         {
             return dbContext.Set<T>().Find(id);
         }

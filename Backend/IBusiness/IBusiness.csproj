@@ -48,5 +48,15 @@
     <Compile Include="IParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IViewModels\IViewModels.csproj">
+      <Project>{9955E9D3-8A0B-4B01-90E2-EEE0BD4F626E}</Project>
+      <Name>IViewModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
+      <Project>{07D560F6-394F-4A4D-AC9B-DB246C677289}</Project>
+      <Name>ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

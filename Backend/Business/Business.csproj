@@ -71,9 +71,21 @@
       <Project>{16C95DEA-2B15-46C6-8708-4832582C7EE2}</Project>
       <Name>IDataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\IDomainModels\IDomainModels.csproj">
+      <Project>{b54c1636-7dde-482b-83bb-3bcc04b8d13c}</Project>
+      <Name>IDomainModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IViewModels\IViewModels.csproj">
+      <Project>{9955e9d3-8a0b-4b01-90e2-eee0bd4f626e}</Project>
+      <Name>IViewModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Logger\Logger.csproj">
       <Project>{3236308D-BC36-4EF0-A80E-5904CC741BEF}</Project>
       <Name>Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
+      <Project>{07D560F6-394F-4A4D-AC9B-DB246C677289}</Project>
+      <Name>ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

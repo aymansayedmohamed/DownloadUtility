@@ -70,11 +70,23 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
@@ -91,17 +103,11 @@
     </Reference>
     <Reference Include="System.Net.Http">
     </Reference>
-    <Reference Include="System.Net.Http.Formatting, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.4\lib\net45\System.Net.Http.Formatting.dll</HintPath>
-    </Reference>
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Http, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.4\lib\net45\System.Web.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Http.WebHost, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.4\lib\net45\System.Web.Http.WebHost.dll</HintPath>
@@ -213,6 +219,10 @@
       <Project>{1ec3d238-0f5e-4906-a9d1-386cfe8a2f73}</Project>
       <Name>DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataModel\DomainModels.csproj">
+      <Project>{e675832e-15bd-48f2-bc58-d93d621aab11}</Project>
+      <Name>DomainModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IBusiness\IBusiness.csproj">
       <Project>{C6AD3441-2AB2-4CC5-A41E-5EB9BB545A54}</Project>
       <Name>IBusiness</Name>
@@ -221,9 +231,21 @@
       <Project>{16C95DEA-2B15-46C6-8708-4832582C7EE2}</Project>
       <Name>IDataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\IDomainModels\IDomainModels.csproj">
+      <Project>{b54c1636-7dde-482b-83bb-3bcc04b8d13c}</Project>
+      <Name>IDomainModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IViewModels\IViewModels.csproj">
+      <Project>{9955E9D3-8A0B-4B01-90E2-EEE0BD4F626E}</Project>
+      <Name>IViewModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Logger\Logger.csproj">
       <Project>{3236308D-BC36-4EF0-A80E-5904CC741BEF}</Project>
       <Name>Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
+      <Project>{07D560F6-394F-4A4D-AC9B-DB246C677289}</Project>
+      <Name>ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

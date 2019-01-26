@@ -31,7 +31,7 @@ namespace Business
             //Implement ftp download startgy    
 
             string host = "";
-            int port = 0;
+            int port = 22;
             string username = "";
             string password = "";
             string sftpInboundPath = "";

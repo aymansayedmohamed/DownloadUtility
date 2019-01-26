@@ -4,3 +4,6 @@ D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataMo
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataModel\obj\Debug\DomainModels.csproj.CoreCompileInputs.cache
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataModel\obj\Debug\DataModel.dll
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataModel\obj\Debug\DataModel.pdb
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataModel\bin\Debug\IDomainModels.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataModel\bin\Debug\IDomainModels.pdb
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\DataModel\obj\Debug\DomainModels.csproj.CopyComplete

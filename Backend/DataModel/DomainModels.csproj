@@ -46,5 +46,11 @@
     <Compile Include="DownloadedFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IDomainModels\IDomainModels.csproj">
+      <Project>{B54C1636-7DDE-482B-83BB-3BCC04B8D13C}</Project>
+      <Name>IDomainModels</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
