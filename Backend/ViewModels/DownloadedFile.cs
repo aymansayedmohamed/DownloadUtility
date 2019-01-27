@@ -14,6 +14,7 @@ namespace ViewModels
         public string Url { get; set; }
         public Nullable<int> ProcessingStatusId { get; set; }
         public string ProcessingStatus { get; set; }
+        public string FileType { get; set; }
 
     }
 }

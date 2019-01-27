@@ -14,5 +14,7 @@ namespace IBusiness
         IQueryable<IDownloadedFile> GetReadyForProcessingFiles();
         IDownloadedFile ApproveFile(IDownloadedFile file);
         IDownloadedFile RejectFile(IDownloadedFile file);
+        void GetFilesType(List<IDownloadedFile> files);
+
     }
 }

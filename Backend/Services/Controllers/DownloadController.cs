@@ -59,6 +59,8 @@ namespace Services.Controllers
 
                 var files = downloadManager.GetReadyForProcessingFiles().ToList();
 
+                downloadManager.GetFilesType(files);
+
                 return Request.CreateResponse(HttpStatusCode.OK, files);
             }
             catch (Exception ex)

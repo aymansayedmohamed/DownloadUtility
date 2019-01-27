@@ -10,6 +10,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using IViewModels;
 using System.IO;
+using static ViewModels.Constants;
+using IBusiness.IHelpers;
 
 namespace Business
 {
@@ -20,16 +22,19 @@ namespace Business
         private IRepository<DomainModels.DownloadedFile> repoDownloadedFile; //to do use interface
         private IRepository<DomainModels.ProcessingStatu> repoProcessingStatus; //to do use interface
         private readonly ILogger logger;
+        private readonly IIOHelper iOHelper;
+
 
 
         public DownloadManager(IParser parser, IDownloadStrategyFactory downloadStrategyFactory, IRepository<DomainModels.DownloadedFile> repoDownloadedFile
-             , IRepository<DomainModels.ProcessingStatu> repoProcessingStatus, ILogger logger)
+             , IRepository<DomainModels.ProcessingStatu> repoProcessingStatus, ILogger logger, IIOHelper iOHelper)
         {
             this.parser = parser;
             this.downloadStrategyFactory = downloadStrategyFactory;
             this.repoDownloadedFile = repoDownloadedFile;
             this.repoProcessingStatus = repoProcessingStatus;
             this.logger = logger;
+            this.iOHelper = iOHelper;
 
         }
 
@@ -109,15 +114,23 @@ namespace Business
                  }).AsQueryable();
         }
 
-
-
         public IDownloadedFile RejectFile(IDownloadedFile file)
         {
             return UpdateStatus(file,DownloadStatutes.Rejected);
         }
+
         public IDownloadedFile ApproveFile(IDownloadedFile file)
         {
             return UpdateStatus(file, DownloadStatutes.Approved);
+        }
+
+        public void GetFilesType(List<IDownloadedFile> files)
+        {
+            foreach (var file in files)
+            {
+                var extention = Path.GetExtension(file.Url)?.ToString().Replace(".", "");
+                file.FileType = iOHelper.GetFileType(extention).ToString();
+            }
         }
 
         private IDownloadedFile UpdateStatus(IDownloadedFile file, DownloadStatutes statuts)

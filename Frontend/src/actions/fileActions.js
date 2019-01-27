@@ -1,4 +1,4 @@
-import * as types from './actionTypes';
+import * as types from '../constants/actionTypes';
 import fileApi from '../api/filesApi';
 
 export function loadFilesSuccess(files){

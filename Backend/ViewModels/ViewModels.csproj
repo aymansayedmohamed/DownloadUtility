@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BatchSources.cs" />
     <Compile Include="DownloadedFile.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

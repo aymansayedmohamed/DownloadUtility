@@ -1,7 +1,10 @@
 ﻿using DownloadUtilityLogger;
 using IBusiness.IHelpers;
 using System;
+using System.Configuration;
 using System.IO;
+using System.Linq;
+using static ViewModels.Constants;
 
 namespace Business.Helpers
 {
@@ -61,5 +64,30 @@ namespace Business.Helpers
             }
 
         }
+
+        public FileType GetFileType(string extention)
+        {
+
+            var imageFileExtentions = ConfigurationManager.AppSettings["ImageFileExtentions"].ToString().Split(';');
+
+            var textFileExtentions = ConfigurationManager.AppSettings["TextFileExtentions"].Split(';');
+
+            var webpageFileExtentions = ConfigurationManager.AppSettings["WebpageFileExtentions"].Split(';');
+
+
+            if(imageFileExtentions.Any(O => O.ToUpper() == extention.ToUpper()))
+                return FileType.IMAGE_FILE_TYPE;
+
+            if (textFileExtentions.Any(O => O.ToUpper() == extention.ToUpper()))
+                return FileType.TEXT_FILE_TYPE;
+
+            if (webpageFileExtentions.Any(O => O.ToUpper() == extention.ToUpper()))
+                return FileType.WEBPAGE_FILE_TYPE;
+
+            return FileType.UNSUPORTED_TYPE;
+
+
+        }
+
     }
 }

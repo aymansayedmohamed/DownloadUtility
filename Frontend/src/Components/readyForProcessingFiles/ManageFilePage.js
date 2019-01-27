@@ -10,7 +10,6 @@ class ManageFilePage extends React.Component{
         super(props, context);
 
         this.state = {
-            file: Object.assign({},this.props.file),
             errors: {}
         };
 
@@ -25,20 +24,20 @@ class ManageFilePage extends React.Component{
 
     approveFile(event){
         event.preventDefault();
-        this.props.actions.approveFile(this.state.file);
+        this.props.actions.approveFile(this.props.file);
         this.context.router.push('/readyForProcessingFiles');
     }
 
     rejectFile(event){
         event.preventDefault();
-        this.props.actions.rejectFile(this.state.file);
+        this.props.actions.rejectFile(this.props.file);
         this.context.router.push('/readyForProcessingFiles');
     }
 
     render(){
         return(
             <FileForm 
-            file={this.state.file}
+            file={this.props.file}
             errors={this.state.errors}
             onApprove={this.approveFile}
             onReject={this.rejectFile}
