@@ -16,6 +16,11 @@ export default function fileReducer(state = [],action){
                 ...state.filter(file => file.Id !== action.file.Id)
             ];
 
+        case types.DOWNLOAD_BATCH_FILES_SUCCESS:
+        return [
+                ...action.files
+            ];
+
         default:
             return state;
     }

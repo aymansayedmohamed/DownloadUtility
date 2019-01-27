@@ -15,12 +15,8 @@ namespace Business.Helpers
 
         public string GetLocalDestinationPath(string remotePath, string localPath)
         {
-            string tempFileDirPath = localPath;
 
-            if (string.IsNullOrEmpty(tempFileDirPath))
-            {
-                tempFileDirPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Temp");
-            }
+            string tempFileDirPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, localPath);
 
             logger.AddInformationLog(nameof(tempFileDirPath) + ": " + tempFileDirPath);
 

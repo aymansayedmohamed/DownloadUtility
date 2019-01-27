@@ -28,15 +28,17 @@ namespace Services.Controllers
 
 
         [HttpPost]
-        [ActionName("DownloadSources")]
-        public HttpResponseMessage DownloadSources([FromBody] string sources)
+        [ActionName("DownloadBatchFiles")]
+        public HttpResponseMessage DownloadBatchFiles(BatchSources batchSources)
         {
             try
             {
 
-                downloadManager.Process(sources);
+                downloadManager.Process(batchSources.Sources);
 
-                return Request.CreateResponse(HttpStatusCode.OK,"Data");
+                var files = downloadManager.GetReadyForProcessingFiles().ToList();
+
+                return Request.CreateResponse(HttpStatusCode.OK,files);
             }
             catch(Exception ex)
             {

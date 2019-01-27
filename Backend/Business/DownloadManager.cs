@@ -9,6 +9,8 @@ using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 using IViewModels;
+using System.IO;
+
 namespace Business
 {
     public class DownloadManager : IDownloadManager
@@ -57,13 +59,14 @@ namespace Business
                     {
                         IDownloadStrategy downloadStrategy = downloadStrategyFactory.Build(url);
 
-                        string localDestinationPath = downloadStrategy.Download(url, localPath);
+                        string physicalPath = downloadStrategy.Download(url, localPath);
+                        string virtualPath = $"{localPath.Replace('\\', '/')}/{Path.GetFileName( physicalPath)}";
                         logger.AddInformationLog($"Local path is: {localPath} for URL: {url} ");
 
                         repoDownloadedFile.Add(new DomainModels.DownloadedFile()
                         {
                             FileRemotePath = url,
-                            LocalPath = localDestinationPath,
+                            LocalPath = virtualPath,
                             ProcessingStatus = (int)DownloadStatutes.ReadyForProcessing,
                         });
 
@@ -87,6 +90,9 @@ namespace Business
 
         public IQueryable<IDownloadedFile> GetReadyForProcessingFiles()
         {
+            var hostUrl = ConfigurationManager.AppSettings["HostUrl"];
+            if (!hostUrl.EndsWith("/"))
+                hostUrl += "/";
 
             return
                 (from file in repoDownloadedFile.GetAll()
@@ -97,7 +103,7 @@ namespace Business
                  {
                      Id = file.Id,
                      Source = file.FileRemotePath,
-                     Url = file.LocalPath,
+                     Url = hostUrl + file.LocalPath,
                      ProcessingStatusId = file.ProcessingStatus,
                      ProcessingStatus = status.Status
                  }).AsQueryable();

@@ -13,7 +13,23 @@ export function rejectFileSuccess(file){
     return {type: types.REJECT_FILE_SUCCESS, file};
 }
 
+export function downloadBatchFilesSuccess(files){
+    return {type: types.DOWNLOAD_BATCH_FILES_SUCCESS, files};
+}
 
+
+
+
+export function downloadBatchFiles(batchSources){
+    return function(dispatch){
+        debugger;
+        return fileApi.downloadBatchFiles(batchSources).then(Response =>{
+            dispatch(downloadBatchFilesSuccess(Response.data));
+        }).catch(error => {
+            throw(error);
+        });
+    };
+}
 
 export function loadFiles(){
     return function(dispatch){
