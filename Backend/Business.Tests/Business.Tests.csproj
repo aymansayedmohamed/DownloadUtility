@@ -62,11 +62,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="DownloadManagerTests.cs" />
+    <Compile Include="SourcesParserTests.cs" />
+    <Compile Include="UriDownloadStrategyTests.cs" />
+    <Compile Include="SFTPDownloadStrategyTests.cs" />
+    <Compile Include="FTPDownloadStrategyTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{2a691997-0ea6-444c-b1b6-6395580b0415}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataModel\DomainModels.csproj">
+      <Project>{e675832e-15bd-48f2-bc58-d93d621aab11}</Project>
+      <Name>DomainModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IBusiness\IBusiness.csproj">
+      <Project>{C6AD3441-2AB2-4CC5-A41E-5EB9BB545A54}</Project>
+      <Name>IBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IDataAccess\IDataAccess.csproj">
+      <Project>{16C95DEA-2B15-46C6-8708-4832582C7EE2}</Project>
+      <Name>IDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{3236308D-BC36-4EF0-A80E-5904CC741BEF}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
+      <Project>{07d560f6-394f-4a4d-ac9b-db246c677289}</Project>
+      <Name>ViewModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

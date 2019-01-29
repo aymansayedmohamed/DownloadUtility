@@ -11,6 +11,7 @@ namespace DataAccess.Tests
     {
         private DownloadedFile downloadedFile;
         IRepository<DownloadedFile> repo;
+
         [TestInitialize]
         public void TestInitialize()
         {
@@ -33,13 +34,6 @@ namespace DataAccess.Tests
             repo.Dispose();
         }
 
-
-        //IQueryable<T> GetAll();
-    //T Find(int id);
-    //T Add(T entity);
-    //void Update(T entity);
-        //void Delete(T entity);
-        //void SaveChanges();
 
         [TestMethod]
         public void Add_ValidEntity_SaveSucess()
@@ -90,27 +84,6 @@ namespace DataAccess.Tests
 
         }
 
-        [TestMethod]
-        public void Delete_DeleteEntity_DeleteSucess()
-        {
-            //arrange
-            repo.Add(downloadedFile);
-            repo.SaveChanges();
-            var id = downloadedFile.Id;
-            //act
-
-            var TempFile = repo.Find(downloadedFile.Id);
-            repo.Delete(TempFile);
-            repo.SaveChanges();
-
-            var result = repo.GetAll().Any(o => o.Id == id);
-            //assert
-            Assert.AreEqual(result,false);
-
-        }
-
-
-
-
+      
     }
 }

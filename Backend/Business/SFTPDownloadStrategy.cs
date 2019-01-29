@@ -23,7 +23,7 @@ namespace Business
 
         public bool IsMatch(string protocol)
         {
-            return protocol == this.protocol; 
+            return protocol.ToUpper() == this.protocol; 
         }
 
         public string Download(string source, string localPath)

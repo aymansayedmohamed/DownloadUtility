@@ -24,7 +24,7 @@ namespace Business
 
         public bool IsMatch(string protocol)
         {
-            return (protocol == httpProtocol || protocol == httpsProtocol);
+            return (protocol.ToUpper() == httpProtocol || protocol.ToUpper() == httpsProtocol);
         }
 
         public string Download(string source, string localPath)
