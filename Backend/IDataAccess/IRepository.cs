@@ -10,10 +10,10 @@ namespace IDataAccess
     {
         IQueryable<T> GetAll();
         T Find(int id);
-        void Add(T entity);
+        T Add(T entity);
         void Update(T entity);
-        void Delete(T entity);
         void SaveChanges();
+        void Delete(T entity);
 
     }
 }

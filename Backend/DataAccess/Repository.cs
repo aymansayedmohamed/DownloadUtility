@@ -28,9 +28,14 @@ namespace DataAccess
             return dbContext.Set<T>().Find(id);
         }
 
-        public void Add(T entity)
+        public T Add(T entity)
         {
-            dbContext.Set<T>().Add(entity);
+            return dbContext.Set<T>().Add(entity);
+        }
+
+        public void Delete(T entity)
+        {
+            dbContext.Set<T>().Remove(entity);
         }
 
         public void Update(T entity)
@@ -39,10 +44,6 @@ namespace DataAccess
             dbContext.Entry(entity).State = EntityState.Modified;
         }
 
-        public void Delete(T entity)
-        {
-            dbContext.Set<T>().Remove(entity);
-        }
 
         public void SaveChanges()
         {

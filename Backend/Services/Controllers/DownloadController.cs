@@ -39,7 +39,15 @@ namespace Services.Controllers
 
                 return Request.CreateResponse(HttpStatusCode.OK,"chack after few minutes te downloaded files");
             }
-            catch(Exception ex)
+            catch(ArgumentException ex)
+            {
+                logger.AddErrorLog(ex);
+
+
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex);
+
+            }
+            catch (Exception ex)
             {
                 //handle exception
 

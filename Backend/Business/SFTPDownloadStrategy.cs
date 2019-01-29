@@ -32,9 +32,9 @@ namespace Business
 
             string host = "";
             int port = 22;
-            string username = "";
-            string password = "";
-            string sftpInboundPath = "";
+            string username = ""; // get it from database confuguratuins
+            string password = "";  // get it from database confuguratuins
+            string sftpInboundPath = ""; // get it from database confuguratuins
             string filename = "";
 
            return DownloadSFTPFile(host, port, username, password, sftpInboundPath, filename);

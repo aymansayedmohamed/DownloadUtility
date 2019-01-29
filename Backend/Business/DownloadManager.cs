@@ -40,7 +40,13 @@ namespace Business
 
         public void Process(string sources)
         {
+            //TODO : Move this logic to separate windows service and make the service listen on Message Queue like Rabbitmq 
+            
             logger.AddInformationLog($"sources value: {sources}");
+
+            //Data validations
+            if (string.IsNullOrWhiteSpace(sources))
+                throw new ArgumentException($"The sources Is null or empty string.");
 
             string delimiter = ConfigurationManager.AppSettings["Delimiter"];
             logger.AddInformationLog($"Delimiter config value: {delimiter}");
@@ -58,9 +64,6 @@ namespace Business
 
             using (repoDownloadedFile)
             {
-
-                //Task.Factory.StartNew(() =>
-                //{
 
                 Parallel.ForEach(soursesUrls, url =>
                     {
@@ -85,11 +88,10 @@ namespace Business
                         }
                         catch (Exception ex)
                         {
-                            // exceptions.Enqueue(ex);
-                            logger.AddErrorLog(ex);
+                             exceptions.Enqueue(ex);
+                             logger.AddErrorLog(ex);
                         }
                     });
-                //});
 
                 if (exceptions.Any())
                 {
