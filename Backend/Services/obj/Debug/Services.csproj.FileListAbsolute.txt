@@ -255,3 +255,5 @@ D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Servic
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\bin\System.Web.Http.Cors.xml
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\bin\IViewModels.dll
 D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\bin\IViewModels.pdb
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\bin\Microsoft.Diagnostics.Tracing.EventSource.xml

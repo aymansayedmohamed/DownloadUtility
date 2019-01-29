@@ -58,37 +58,44 @@ namespace Business
 
             using (repoDownloadedFile)
             {
+
+                //Task.Factory.StartNew(() =>
+                //{
+
                 Parallel.ForEach(soursesUrls, url =>
-                {
-                    try
                     {
-                        IDownloadStrategy downloadStrategy = downloadStrategyFactory.Build(url);
-
-                        string physicalPath = downloadStrategy.Download(url, localPath);
-                        string virtualPath = $"{localPath.Replace('\\', '/')}/{Path.GetFileName( physicalPath)}";
-                        logger.AddInformationLog($"Local path is: {localPath} for URL: {url} ");
-
-                        repoDownloadedFile.Add(new DomainModels.DownloadedFile()
+                        try
                         {
-                            FileRemotePath = url,
-                            LocalPath = virtualPath,
-                            ProcessingStatus = (int)DownloadStatutes.ReadyForProcessing,
-                        });
+                            IDownloadStrategy downloadStrategy = downloadStrategyFactory.Build(url);
 
-                        repoDownloadedFile.SaveChanges();
+                            string physicalPath = downloadStrategy.Download(url, localPath);
+                            string virtualPath = $"{localPath.Replace('\\', '/')}/{Path.GetFileName(physicalPath)}";
+                            logger.AddInformationLog($"Local path is: {localPath} for URL: {url} ");
 
-                        logger.AddInformationLog($"Source :{url} saved to the database with status ready for processing");
-                    }
-                    catch (Exception ex)
-                    {
-                        exceptions.Enqueue(ex);
-                    }
-                });
+                            repoDownloadedFile.Add(new DomainModels.DownloadedFile()
+                            {
+                                FileRemotePath = url,
+                                LocalPath = virtualPath,
+                                ProcessingStatus = (int)DownloadStatutes.ReadyForProcessing,
+                            });
+
+                            repoDownloadedFile.SaveChanges();
+
+                            logger.AddInformationLog($"Source :{url} saved to the database with status ready for processing");
+                        }
+                        catch (Exception ex)
+                        {
+                            // exceptions.Enqueue(ex);
+                            logger.AddErrorLog(ex);
+                        }
+                    });
+                //});
 
                 if (exceptions.Any())
                 {
                     throw new AggregateException(exceptions);
                 }
+
             }
 
         }

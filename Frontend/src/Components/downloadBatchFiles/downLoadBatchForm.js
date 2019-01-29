@@ -2,7 +2,6 @@ import React, {PropTypes} from 'react';
 
 const DownLoadBatchForm = ({batchSources, onChange, onDownload, loading, errors})=>{
 
-const type = 'png';
     return(
         <form>
             <div className="form-group">
@@ -16,6 +15,7 @@ const type = 'png';
                     name="Sources"
                     >
                 </textarea>
+                {errors && <div className="alert alert-danger">{errors.title}</div>}
             </div>
             <div className="form-group">
                 <input

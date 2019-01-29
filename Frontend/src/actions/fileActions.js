@@ -22,7 +22,7 @@ export function downloadBatchFilesSuccess(files){
 
 export function downloadBatchFiles(batchSources){
     return function(dispatch){
-        debugger;
+        
         return fileApi.downloadBatchFiles(batchSources).then(Response =>{
             dispatch(downloadBatchFilesSuccess(Response.data));
         }).catch(error => {
@@ -33,7 +33,7 @@ export function downloadBatchFiles(batchSources){
 
 export function loadFiles(){
     return function(dispatch){
-        debugger;
+        
         return fileApi.getAllFiles().then(Response =>{
             dispatch(loadFilesSuccess(Response.data));
         }).catch(error => {

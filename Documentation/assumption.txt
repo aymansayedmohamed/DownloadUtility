@@ -1,0 +1,13 @@
+I assume that : 
+   - The program will take a list of sources with a different protocol .
+   - The sources format will be string separated by a comma.
+   - the program will download the files to a local directory. 
+   - The program should be extensible to support different protocols.
+   - some sources might be very big (more than memory).
+   - some sources might be very slow, while others might be fast.
+   - some sources might fail in the middle of download so partially downloaded files will be deleted.
+   - The downloaded files will be with status (Ready for processing).
+   - will be a frontend application to view the downloaded files with status (Ready for processing) and then approve or reject it.
+   - The frontend application should be dynamic and should allow viewing the following kinds of files (images, text, and web pages i.e. HTML). 
+
+

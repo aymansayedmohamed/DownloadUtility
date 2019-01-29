@@ -36,9 +36,8 @@ namespace Services.Controllers
 
                 downloadManager.Process(batchSources.Sources);
 
-                var files = downloadManager.GetReadyForProcessingFiles().ToList();
 
-                return Request.CreateResponse(HttpStatusCode.OK,files);
+                return Request.CreateResponse(HttpStatusCode.OK,"chack after few minutes te downloaded files");
             }
             catch(Exception ex)
             {

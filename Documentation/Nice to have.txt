@@ -1,0 +1,4 @@
+It will be nice if :
+   - use message queue like rabbitmq or kafka as layer between the dowload service and the webservice
+   - Build email service subscribe on message queue to send email after the download service finish
+   - Build push notification module to push real time state of the downloading percentage

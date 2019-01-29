@@ -75,7 +75,7 @@ namespace Services
 
             kernel.Bind<IDomainModels.IProcessingStatus>().To<DomainModels.ProcessingStatu>().InTransientScope();
 
-            kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InRequestScope();
+            kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InThreadScope();
 
             kernel.Bind(typeof(IRepository<>)).To(typeof(Repository<>)).InTransientScope();
 

@@ -4,14 +4,14 @@ import {bindActionCreators} from 'redux';
 import DownLoadBatchForm from './downLoadBatchForm';
 import * as fileActions from '../../actions/fileActions';
 
-class DownloadBatchFilesPage extends React.Component{
+export class DownloadBatchFilesPage extends React.Component{
 
     constructor(props, context){
         super(props, context);
-        debugger;
+        
         this.state={
             batchSources : Object.assign({}, this.props.batchSources),
-            errors: {}
+            errors:{}
             };
         this.updateSourcesState = this.updateSourcesState.bind(this);
         this.downloadBatchFiles = this.downloadBatchFiles.bind(this);
@@ -24,9 +24,26 @@ class DownloadBatchFilesPage extends React.Component{
         return this.setState({batchSources: batchSources});
     }
 
+    downLoadBatchFormValid(){
+        let formIsValid = true;
+        let errors = {};
+
+        if(this.state.batchSources.Sources && this.state.batchSources.Sources.length<1){
+            errors.title = "Sources is required";
+            formIsValid = false;
+        }
+
+        this.setState({errors: errors});
+        return formIsValid;
+    }
+
     downloadBatchFiles(event){
-        debugger;
         event.preventDefault();
+
+        if(!this.downLoadBatchFormValid()){
+            return;
+        }
+
         this.props.actions.downloadBatchFiles(this.state.batchSources);
         this.context.router.push('/readyForProcessingFiles');
     }
@@ -58,7 +75,7 @@ DownloadBatchFilesPage.propTypes ={
     };
 
 function mapStateToProps(state , ownProps){
-    debugger;
+    
     let batchSources = {Sources:""};
     return{
         batchSources: batchSources

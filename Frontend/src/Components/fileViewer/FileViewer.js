@@ -5,7 +5,6 @@ import ViewWebPage from '../fileViewer/ViewWebPage';
 import UnsuportedFileFormat from '../fileViewer/UnsuportedFileFormat';
 
 const FileViewer = ({src, fileType})=>{
-debugger;
         if(fileType == fileTypes.IMAGE_FILE_TYPE){
             return(
                 <ViewImage

@@ -18,12 +18,12 @@ class FilesApi {
    }
 
   static approveFile(file) {
-    debugger;
+    
      return axios.put(`http://localhost:59346/api/Download/ApproveFile`,file  );
   }
 
   static rejectFile(file) {
-    debugger;
+    
      return axios.put(`http://localhost:59346/api/Download/RejectFile`,file  );
   }
   

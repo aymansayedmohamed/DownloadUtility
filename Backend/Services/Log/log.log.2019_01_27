@@ -1,0 +1,169 @@
+2019/13/27 01:13:36,592 INFO  DownloadUtilityLogger.FileLogger [6] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/13/27 01:13:36,609 INFO  DownloadUtilityLogger.FileLogger [6] Delimiter config value: , 
+2019/13/27 01:13:36,609 INFO  DownloadUtilityLogger.FileLogger [6] Sources parsing delimiter: , 
+2019/13/27 01:13:36,609 INFO  DownloadUtilityLogger.FileLogger [6] LocalDirectory config value: Temp\DownloadedFiles 
+2019/13/27 01:13:36,610 INFO  DownloadUtilityLogger.FileLogger [6] sourses Urls counts after parsing: 2 
+2019/13/27 01:13:44,682 INFO  DownloadUtilityLogger.FileLogger [6] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp\DownloadedFiles 
+2019/13/27 01:13:44,682 INFO  DownloadUtilityLogger.FileLogger [15] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp\DownloadedFiles 
+2019/13/27 01:13:44,683 INFO  DownloadUtilityLogger.FileLogger [6] tempFileDir object is created. 
+2019/13/27 01:13:44,684 INFO  DownloadUtilityLogger.FileLogger [6] tempFileDir not exists. 
+2019/13/27 01:13:44,683 INFO  DownloadUtilityLogger.FileLogger [15] tempFileDir object is created. 
+2019/13/27 01:13:44,706 INFO  DownloadUtilityLogger.FileLogger [6] tempFileDir created. 
+2019/13/27 01:13:45,743 INFO  DownloadUtilityLogger.FileLogger [15] BufferSize config value: 2048 
+2019/13/27 01:13:45,769 INFO  DownloadUtilityLogger.FileLogger [15] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/13/27 01:13:58,073 INFO  DownloadUtilityLogger.FileLogger [6] BufferSize config value: 2048 
+2019/13/27 01:13:58,083 INFO  DownloadUtilityLogger.FileLogger [15] Local path is: Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/13/27 01:13:58,326 INFO  DownloadUtilityLogger.FileLogger [15] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/15/27 01:15:33,292 INFO  DownloadUtilityLogger.FileLogger [6] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/15/27 01:15:35,984 INFO  DownloadUtilityLogger.FileLogger [6] Local path is: Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/15/27 01:15:36,019 INFO  DownloadUtilityLogger.FileLogger [6] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/26/27 01:26:36,029 INFO  DownloadUtilityLogger.FileLogger [11] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/26/27 01:26:36,036 INFO  DownloadUtilityLogger.FileLogger [11] Delimiter config value: , 
+2019/26/27 01:26:36,036 INFO  DownloadUtilityLogger.FileLogger [11] Sources parsing delimiter: , 
+2019/26/27 01:26:36,036 INFO  DownloadUtilityLogger.FileLogger [11] LocalDirectory config value: Temp\DownloadedFiles 
+2019/26/27 01:26:36,037 INFO  DownloadUtilityLogger.FileLogger [11] sourses Urls counts after parsing: 2 
+2019/26/27 01:26:40,416 INFO  DownloadUtilityLogger.FileLogger [11] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp\DownloadedFiles 
+2019/26/27 01:26:40,416 INFO  DownloadUtilityLogger.FileLogger [11] tempFileDir object is created. 
+2019/26/27 01:26:40,416 INFO  DownloadUtilityLogger.FileLogger [12] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp\DownloadedFiles 
+2019/26/27 01:26:40,416 INFO  DownloadUtilityLogger.FileLogger [12] tempFileDir object is created. 
+2019/26/27 01:26:40,843 INFO  DownloadUtilityLogger.FileLogger [12] BufferSize config value: 2048 
+2019/26/27 01:26:40,875 INFO  DownloadUtilityLogger.FileLogger [12] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/26/27 01:26:40,875 INFO  DownloadUtilityLogger.FileLogger [12] Local path is: Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/26/27 01:26:41,073 INFO  DownloadUtilityLogger.FileLogger [12] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/26/27 01:26:42,091 INFO  DownloadUtilityLogger.FileLogger [11] BufferSize config value: 2048 
+2019/27/27 01:27:44,039 INFO  DownloadUtilityLogger.FileLogger [11] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/27/27 01:27:44,040 INFO  DownloadUtilityLogger.FileLogger [11] Local path is: Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/27/27 01:27:44,102 INFO  DownloadUtilityLogger.FileLogger [11] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/57/27 10:57:02,643 INFO  DownloadUtilityLogger.FileLogger [9] sources value: "ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png" 
+2019/57/27 10:57:02,654 INFO  DownloadUtilityLogger.FileLogger [9] Delimiter config value: , 
+2019/57/27 10:57:02,654 INFO  DownloadUtilityLogger.FileLogger [9] Sources parsing delimiter: , 
+2019/57/27 10:57:02,654 INFO  DownloadUtilityLogger.FileLogger [9] LocalDirectory config value: Temp\DownloadedFiles 
+2019/57/27 10:57:02,655 INFO  DownloadUtilityLogger.FileLogger [9] sourses Urls counts after parsing: 2 
+2019/57/27 10:57:02,697 INFO  DownloadUtilityLogger.FileLogger [10] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp\DownloadedFiles 
+2019/57/27 10:57:02,697 INFO  DownloadUtilityLogger.FileLogger [10] tempFileDir object is created. 
+2019/57/27 10:57:02,761 ERROR DownloadUtilityLogger.FileLogger [9] One or more errors occurred. System.AggregateException: One or more errors occurred. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Business.DownloadManager.<>c__DisplayClass6_0.<Process>b__0(String url) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 62
+   --- End of inner exception stack trace ---
+   at Business.DownloadManager.Process(String sources) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 85
+   at Services.Controllers.DownloadController.DownloadBatchFiles(BatchSources batchSources) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Controllers\DownloadController.cs:line 37
+---> (Inner Exception #0) System.NullReferenceException: Object reference not set to an instance of an object.
+   at Business.DownloadManager.<>c__DisplayClass6_0.<Process>b__0(String url) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 62<---
+
+---> (Inner Exception #1) System.ArgumentException: The path is not of a legal form.
+   at System.IO.Path.LegacyNormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.NormalizePath(String path, Boolean fullCheck, Int32 maxPathLength, Boolean expandShortPaths)
+   at System.IO.Path.GetFullPathInternal(String path)
+   at System.IO.FileInfo.Init(String fileName, Boolean checkHost)
+   at System.IO.FileInfo..ctor(String fileName)
+   at Business.UriDownloadStrategy.DownloadUriFile(String remotePath, String localPath) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\UriDownloadStrategy.cs:line 81
+   at Business.UriDownloadStrategy.Download(String source, String localPath) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\UriDownloadStrategy.cs:line 32
+   at Business.DownloadManager.<>c__DisplayClass6_0.<Process>b__0(String url) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 62<---
+
+
+2019/59/27 10:59:00,068 INFO  DownloadUtilityLogger.FileLogger [8] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/59/27 10:59:00,069 INFO  DownloadUtilityLogger.FileLogger [8] Delimiter config value: , 
+2019/59/27 10:59:00,069 INFO  DownloadUtilityLogger.FileLogger [8] Sources parsing delimiter: , 
+2019/59/27 10:59:00,069 INFO  DownloadUtilityLogger.FileLogger [8] LocalDirectory config value: Temp\DownloadedFiles 
+2019/59/27 10:59:00,069 INFO  DownloadUtilityLogger.FileLogger [8] sourses Urls counts after parsing: 2 
+2019/59/27 10:59:00,069 INFO  DownloadUtilityLogger.FileLogger [6] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp\DownloadedFiles 
+2019/59/27 10:59:00,069 INFO  DownloadUtilityLogger.FileLogger [6] tempFileDir object is created. 
+2019/59/27 10:59:00,070 INFO  DownloadUtilityLogger.FileLogger [8] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp\DownloadedFiles 
+2019/59/27 10:59:00,070 INFO  DownloadUtilityLogger.FileLogger [8] tempFileDir object is created. 
+2019/59/27 10:59:00,489 INFO  DownloadUtilityLogger.FileLogger [6] BufferSize config value: 2048 
+2019/59/27 10:59:00,508 INFO  DownloadUtilityLogger.FileLogger [6] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/59/27 10:59:00,508 INFO  DownloadUtilityLogger.FileLogger [6] Local path is: Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/59/27 10:59:00,574 INFO  DownloadUtilityLogger.FileLogger [6] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/59/27 10:59:01,350 INFO  DownloadUtilityLogger.FileLogger [8] BufferSize config value: 2048 
+2019/59/27 10:59:31,577 INFO  DownloadUtilityLogger.FileLogger [8] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/59/27 10:59:31,577 INFO  DownloadUtilityLogger.FileLogger [8] Local path is: Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/59/27 10:59:31,607 INFO  DownloadUtilityLogger.FileLogger [8] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/59/27 10:59:31,648 ERROR DownloadUtilityLogger.FileLogger [8] The operation cannot be completed because the DbContext has been disposed. System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_Expression()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Expression()
+   at System.Linq.Queryable.GetSourceExpression[TSource](IEnumerable`1 source)
+   at System.Linq.Queryable.Join[TOuter,TInner,TKey,TResult](IQueryable`1 outer, IEnumerable`1 inner, Expression`1 outerKeySelector, Expression`1 innerKeySelector, Expression`1 resultSelector)
+   at Business.DownloadManager.GetReadyForProcessingFiles() in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 97
+   at Services.Controllers.DownloadController.DownloadBatchFiles(BatchSources batchSources) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Controllers\DownloadController.cs:line 39
+
+2019/24/27 16:24:43,716 INFO  DownloadUtilityLogger.FileLogger [28] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/24/27 16:24:43,731 INFO  DownloadUtilityLogger.FileLogger [28] Delimiter config value: , 
+2019/24/27 16:24:43,731 INFO  DownloadUtilityLogger.FileLogger [28] Sources parsing delimiter: , 
+2019/24/27 16:24:43,731 INFO  DownloadUtilityLogger.FileLogger [28] LocalDirectory config value: Temp\DownloadedFiles 
+2019/24/27 16:24:43,732 INFO  DownloadUtilityLogger.FileLogger [28] sourses Urls counts after parsing: 2 
+2019/24/27 16:24:43,736 INFO  DownloadUtilityLogger.FileLogger [24] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp\DownloadedFiles 
+2019/24/27 16:24:43,736 INFO  DownloadUtilityLogger.FileLogger [24] tempFileDir object is created. 
+2019/24/27 16:24:43,736 INFO  DownloadUtilityLogger.FileLogger [28] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp\DownloadedFiles 
+2019/24/27 16:24:43,737 INFO  DownloadUtilityLogger.FileLogger [28] tempFileDir object is created. 
+2019/24/27 16:24:44,122 INFO  DownloadUtilityLogger.FileLogger [24] BufferSize config value: 2048 
+2019/24/27 16:24:44,140 INFO  DownloadUtilityLogger.FileLogger [24] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/24/27 16:24:44,140 INFO  DownloadUtilityLogger.FileLogger [24] Local path is: Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/24/27 16:24:44,193 INFO  DownloadUtilityLogger.FileLogger [24] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/24/27 16:24:44,570 INFO  DownloadUtilityLogger.FileLogger [28] BufferSize config value: 2048 
+2019/24/27 16:24:54,587 INFO  DownloadUtilityLogger.FileLogger [28] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/24/27 16:24:54,587 INFO  DownloadUtilityLogger.FileLogger [28] Local path is: Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/24/27 16:24:54,621 INFO  DownloadUtilityLogger.FileLogger [28] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/24/27 16:24:54,682 ERROR DownloadUtilityLogger.FileLogger [28] The operation cannot be completed because the DbContext has been disposed. System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_Expression()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Expression()
+   at System.Linq.Queryable.GetSourceExpression[TSource](IEnumerable`1 source)
+   at System.Linq.Queryable.Join[TOuter,TInner,TKey,TResult](IQueryable`1 outer, IEnumerable`1 inner, Expression`1 outerKeySelector, Expression`1 innerKeySelector, Expression`1 resultSelector)
+   at Business.DownloadManager.GetReadyForProcessingFiles() in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 97
+   at Services.Controllers.DownloadController.DownloadBatchFiles(BatchSources batchSources) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Controllers\DownloadController.cs:line 39
+
+2019/09/27 17:09:09,180 INFO  DownloadUtilityLogger.FileLogger [12] sources value: ftp://speedtest.tele2.net/5MB.zip,https://www.everyarabstudent.com/img2017/top_more_retina.png 
+2019/09/27 17:09:09,187 INFO  DownloadUtilityLogger.FileLogger [12] Delimiter config value: , 
+2019/09/27 17:09:09,187 INFO  DownloadUtilityLogger.FileLogger [12] Sources parsing delimiter: , 
+2019/09/27 17:09:09,187 INFO  DownloadUtilityLogger.FileLogger [12] LocalDirectory config value: Temp\DownloadedFiles 
+2019/09/27 17:09:09,188 INFO  DownloadUtilityLogger.FileLogger [12] sourses Urls counts after parsing: 2 
+2019/09/27 17:09:09,191 INFO  DownloadUtilityLogger.FileLogger [12] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp\DownloadedFiles 
+2019/09/27 17:09:09,191 INFO  DownloadUtilityLogger.FileLogger [12] tempFileDir object is created. 
+2019/09/27 17:09:09,191 INFO  DownloadUtilityLogger.FileLogger [10] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp\DownloadedFiles 
+2019/09/27 17:09:09,191 INFO  DownloadUtilityLogger.FileLogger [10] tempFileDir object is created. 
+2019/09/27 17:09:09,647 INFO  DownloadUtilityLogger.FileLogger [10] BufferSize config value: 2048 
+2019/09/27 17:09:09,666 INFO  DownloadUtilityLogger.FileLogger [10] Download file https://www.everyarabstudent.com/img2017/top_more_retina.png completed 
+2019/09/27 17:09:09,666 INFO  DownloadUtilityLogger.FileLogger [10] Local path is: Temp\DownloadedFiles for URL: https://www.everyarabstudent.com/img2017/top_more_retina.png  
+2019/09/27 17:09:09,719 INFO  DownloadUtilityLogger.FileLogger [10] Source :https://www.everyarabstudent.com/img2017/top_more_retina.png saved to the database with status ready for processing 
+2019/09/27 17:09:10,368 INFO  DownloadUtilityLogger.FileLogger [12] BufferSize config value: 2048 
+2019/09/27 17:09:22,995 INFO  DownloadUtilityLogger.FileLogger [12] Download file ftp://speedtest.tele2.net/5MB.zip completed 
+2019/09/27 17:09:22,995 INFO  DownloadUtilityLogger.FileLogger [12] Local path is: Temp\DownloadedFiles for URL: ftp://speedtest.tele2.net/5MB.zip  
+2019/09/27 17:09:23,032 INFO  DownloadUtilityLogger.FileLogger [12] Source :ftp://speedtest.tele2.net/5MB.zip saved to the database with status ready for processing 
+2019/09/27 17:09:23,093 ERROR DownloadUtilityLogger.FileLogger [12] The operation cannot be completed because the DbContext has been disposed. System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_Expression()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Expression()
+   at System.Linq.Queryable.GetSourceExpression[TSource](IEnumerable`1 source)
+   at System.Linq.Queryable.Join[TOuter,TInner,TKey,TResult](IQueryable`1 outer, IEnumerable`1 inner, Expression`1 outerKeySelector, Expression`1 innerKeySelector, Expression`1 resultSelector)
+   at Business.DownloadManager.GetReadyForProcessingFiles() in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 97
+   at Services.Controllers.DownloadController.DownloadBatchFiles(BatchSources batchSources) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Controllers\DownloadController.cs:line 39
+
+2019/00/27 18:00:05,793 INFO  DownloadUtilityLogger.FileLogger [12] sources value:  
+2019/00/27 18:00:05,801 INFO  DownloadUtilityLogger.FileLogger [12] Delimiter config value: , 
+2019/00/27 18:00:05,801 INFO  DownloadUtilityLogger.FileLogger [12] Sources parsing delimiter: , 
+2019/00/27 18:00:05,802 INFO  DownloadUtilityLogger.FileLogger [12] LocalDirectory config value: Temp\DownloadedFiles 
+2019/00/27 18:00:05,802 INFO  DownloadUtilityLogger.FileLogger [12] sourses Urls counts after parsing: 1 
+2019/00/27 18:00:05,916 ERROR DownloadUtilityLogger.FileLogger [12] One or more errors occurred. System.AggregateException: One or more errors occurred. ---> System.ArgumentOutOfRangeException: Length cannot be less than zero.
+Parameter name: length
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Business.DownloadStrategyFactory.Build(String soursesUrl) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadStrategyFactory.cs:line 21
+   at Business.DownloadManager.<>c__DisplayClass6_0.<Process>b__0(String url) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 60
+   --- End of inner exception stack trace ---
+   at Business.DownloadManager.Process(String sources) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 85
+   at Services.Controllers.DownloadController.DownloadBatchFiles(BatchSources batchSources) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Controllers\DownloadController.cs:line 37
+---> (Inner Exception #0) System.ArgumentOutOfRangeException: Length cannot be less than zero.
+Parameter name: length
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Business.DownloadStrategyFactory.Build(String soursesUrl) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadStrategyFactory.cs:line 21
+   at Business.DownloadManager.<>c__DisplayClass6_0.<Process>b__0(String url) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 60<---
+
+

@@ -1,0 +1,82 @@
+2019/30/28 01:30:16,308 ERROR DownloadUtilityLogger.FileLogger [11] The entity type IDownloadedFile is not part of the model for the current context. System.InvalidOperationException: The entity type IDownloadedFile is not part of the model for the current context.
+   at System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Join[TOuter,TInner,TKey,TResult](IQueryable`1 outer, IEnumerable`1 inner, Expression`1 outerKeySelector, Expression`1 innerKeySelector, Expression`1 resultSelector)
+   at Business.DownloadManager.GetReadyForProcessingFiles() in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 102
+   at Services.Controllers.DownloadController.GetReadyForProcessingFiles() in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Controllers\DownloadController.cs:line 60
+
+2019/05/28 07:05:10,256 INFO  DownloadUtilityLogger.FileLogger [9] sources value: ftp://54 
+2019/05/28 07:05:10,264 INFO  DownloadUtilityLogger.FileLogger [9] Delimiter config value: , 
+2019/05/28 07:05:10,264 INFO  DownloadUtilityLogger.FileLogger [9] Sources parsing delimiter: , 
+2019/05/28 07:05:10,264 INFO  DownloadUtilityLogger.FileLogger [9] LocalDirectory config value: Temp\DownloadedFiles 
+2019/05/28 07:05:10,265 INFO  DownloadUtilityLogger.FileLogger [9] sourses Urls counts after parsing: 1 
+2019/05/28 07:05:10,267 INFO  DownloadUtilityLogger.FileLogger [9] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp\DownloadedFiles 
+2019/05/28 07:05:10,267 INFO  DownloadUtilityLogger.FileLogger [9] tempFileDir object is created. 
+2019/05/28 07:05:10,340 INFO  DownloadUtilityLogger.FileLogger [9] Download file ftp://54 didn't complete 
+2019/05/28 07:05:10,407 ERROR DownloadUtilityLogger.FileLogger [9] One or more errors occurred. System.AggregateException: One or more errors occurred. ---> System.Net.WebException: Unable to connect to the remote server
+   at System.Net.FtpWebRequest.GetResponse()
+   at Business.FTPDownloadStrategy.DownloadFTPFile(String remoteFtpPath, String localPath, String username, String password) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\FTPDownloadStrategy.cs:line 92
+   at Business.FTPDownloadStrategy.Download(String source, String localPath) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\FTPDownloadStrategy.cs:line 36
+   at Business.DownloadManager.<>c__DisplayClass7_0.<Process>b__0(String url) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 67
+   --- End of inner exception stack trace ---
+   at Business.DownloadManager.Process(String sources) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 90
+   at Services.Controllers.DownloadController.DownloadBatchFiles(BatchSources batchSources) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Controllers\DownloadController.cs:line 37
+---> (Inner Exception #0) System.Net.WebException: Unable to connect to the remote server
+   at System.Net.FtpWebRequest.GetResponse()
+   at Business.FTPDownloadStrategy.DownloadFTPFile(String remoteFtpPath, String localPath, String username, String password) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\FTPDownloadStrategy.cs:line 92
+   at Business.FTPDownloadStrategy.Download(String source, String localPath) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\FTPDownloadStrategy.cs:line 36
+   at Business.DownloadManager.<>c__DisplayClass7_0.<Process>b__0(String url) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 67<---
+
+
+2019/38/28 10:38:29,796 INFO  DownloadUtilityLogger.FileLogger [9] sources value:  
+2019/38/28 10:38:29,804 INFO  DownloadUtilityLogger.FileLogger [9] Delimiter config value: , 
+2019/38/28 10:38:29,804 INFO  DownloadUtilityLogger.FileLogger [9] Sources parsing delimiter: , 
+2019/38/28 10:38:29,804 INFO  DownloadUtilityLogger.FileLogger [9] LocalDirectory config value: Temp\DownloadedFiles 
+2019/38/28 10:38:29,805 INFO  DownloadUtilityLogger.FileLogger [9] sourses Urls counts after parsing: 1 
+2019/38/28 10:38:29,886 ERROR DownloadUtilityLogger.FileLogger [9] One or more errors occurred. System.AggregateException: One or more errors occurred. ---> System.ArgumentOutOfRangeException: Length cannot be less than zero.
+Parameter name: length
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Business.DownloadStrategyFactory.Build(String soursesUrl) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadStrategyFactory.cs:line 21
+   at Business.DownloadManager.<>c__DisplayClass7_0.<Process>b__0(String url) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 65
+   --- End of inner exception stack trace ---
+   at Business.DownloadManager.Process(String sources) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 90
+   at Services.Controllers.DownloadController.DownloadBatchFiles(BatchSources batchSources) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Controllers\DownloadController.cs:line 37
+---> (Inner Exception #0) System.ArgumentOutOfRangeException: Length cannot be less than zero.
+Parameter name: length
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Business.DownloadStrategyFactory.Build(String soursesUrl) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadStrategyFactory.cs:line 21
+   at Business.DownloadManager.<>c__DisplayClass7_0.<Process>b__0(String url) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 65<---
+
+
+2019/38/28 10:38:35,289 INFO  DownloadUtilityLogger.FileLogger [10] sources value:  
+2019/38/28 10:38:35,290 INFO  DownloadUtilityLogger.FileLogger [10] Delimiter config value: , 
+2019/38/28 10:38:35,290 INFO  DownloadUtilityLogger.FileLogger [10] Sources parsing delimiter: , 
+2019/38/28 10:38:35,290 INFO  DownloadUtilityLogger.FileLogger [10] LocalDirectory config value: Temp\DownloadedFiles 
+2019/38/28 10:38:35,290 INFO  DownloadUtilityLogger.FileLogger [10] sourses Urls counts after parsing: 1 
+2019/38/28 10:38:35,347 ERROR DownloadUtilityLogger.FileLogger [10] One or more errors occurred. System.AggregateException: One or more errors occurred. ---> System.ArgumentOutOfRangeException: Length cannot be less than zero.
+Parameter name: length
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Business.DownloadStrategyFactory.Build(String soursesUrl) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadStrategyFactory.cs:line 21
+   at Business.DownloadManager.<>c__DisplayClass7_0.<Process>b__0(String url) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 65
+   --- End of inner exception stack trace ---
+   at Business.DownloadManager.Process(String sources) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 90
+   at Services.Controllers.DownloadController.DownloadBatchFiles(BatchSources batchSources) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Controllers\DownloadController.cs:line 37
+---> (Inner Exception #0) System.ArgumentOutOfRangeException: Length cannot be less than zero.
+Parameter name: length
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Business.DownloadStrategyFactory.Build(String soursesUrl) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadStrategyFactory.cs:line 21
+   at Business.DownloadManager.<>c__DisplayClass7_0.<Process>b__0(String url) in D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Business\DownloadManager.cs:line 65<---
+
+
+2019/19/28 22:19:37,744 INFO  DownloadUtilityLogger.FileLogger [10] sources value: ftp://hh,http://jhhj 
+2019/19/28 22:19:37,752 INFO  DownloadUtilityLogger.FileLogger [10] Delimiter config value: , 
+2019/19/28 22:19:37,752 INFO  DownloadUtilityLogger.FileLogger [10] Sources parsing delimiter: , 
+2019/19/28 22:19:37,752 INFO  DownloadUtilityLogger.FileLogger [10] LocalDirectory config value: Temp\DownloadedFiles 
+2019/19/28 22:19:37,752 INFO  DownloadUtilityLogger.FileLogger [10] sourses Urls counts after parsing: 2 
+2019/19/28 22:19:46,307 INFO  DownloadUtilityLogger.FileLogger [9] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp\DownloadedFiles 
+2019/19/28 22:19:46,307 INFO  DownloadUtilityLogger.FileLogger [9] tempFileDir object is created. 
+2019/19/28 22:19:46,308 INFO  DownloadUtilityLogger.FileLogger [8] tempFileDirPath: D:\CV\Interviews\Agoda\2nd phase development task\DownloadUtility\Backend\Services\Temp\DownloadedFiles 
+2019/19/28 22:19:46,308 INFO  DownloadUtilityLogger.FileLogger [8] tempFileDir object is created. 

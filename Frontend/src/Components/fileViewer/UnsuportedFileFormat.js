@@ -5,7 +5,7 @@ const UnsuportedFileFormat = ({src})=>{
     return(
 
             <div className="form-group">
-                <h1> Unsuported file format</h1>
+                <h1>Unsuported file format</h1>
             </div>
 
     );
